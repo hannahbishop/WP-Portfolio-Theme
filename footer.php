@@ -2,11 +2,12 @@
         <footer>
             <section class="footer-nav">
                 <h4>Hannah Bishop</h4>
-                <ul>
+                <!--<ul>
                     <li><a class="footer-link" href="#">Projects</a></li>
                     <li><a class="footer-link" href="#">Resume</a></li>
                     <li><a class="footer-link" href="#">About</a></li>
-                </ul>
+                </ul>-->
+                <?php wp_nav_menu( array( 'theme_location' => 'secondary' , 'container' => '' ) ); ?>
             </section>
             <section class="footer-contact">
                 <h4>Contact</h4>

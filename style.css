@@ -187,7 +187,7 @@ footer li {
 }
 
 /* line 19, sass/partials/_footer.scss */
-.footer-link {
+footer a {
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.2rem;
   color: #767676;
@@ -195,6 +195,6 @@ footer li {
 }
 
 /* line 26, sass/partials/_footer.scss */
-.footer-link:hover {
+footer a:hover {
   color: #000000;
 }

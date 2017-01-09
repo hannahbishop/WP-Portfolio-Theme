@@ -16,13 +16,13 @@ footer li {
     margin: 0.2rem 0;
 }
 
-.footer-link {
+footer a {
     font-family: $secondary-font-stack;
     font-size: 1.2rem;
     color: $secondary-font-color;
     letter-spacing: 0.05rem;
 }
 
-.footer-link:hover {
+footer a:hover {
     color: $primary-font-color;
 }
