@@ -1,0 +1,28 @@
+footer {
+    padding: 6rem 5rem 2.5rem;
+}
+
+.footer-nav {
+    display: inline-block;
+}
+
+.footer-contact {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+footer li {
+    margin: 0.2rem 0;
+}
+
+.footer-link {
+    font-family: $secondary-font-stack;
+    font-size: 1.2rem;
+    color: $secondary-font-color;
+    letter-spacing: 0.05rem;
+}
+
+.footer-link:hover {
+    color: $primary-font-color;
+}
