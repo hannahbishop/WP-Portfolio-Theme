@@ -23,15 +23,15 @@ mark {
     color: $primary-font-color;
 }
 
-nav {
+.header-nav {
     margin-top: 5rem;
 }
 
-nav li {
+.header-nav .menu-item {
     float: left;
 }
 
-.nav-link {
+.header-nav a {
     padding: 0 2.5rem;
     display: inline-block;
     font-family: $secondary-font-stack;

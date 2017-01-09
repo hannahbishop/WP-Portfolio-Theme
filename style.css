@@ -144,17 +144,17 @@ mark {
 }
 
 /* line 26, sass/partials/_header.scss */
-nav {
+.header-nav {
   margin-top: 5rem;
 }
 
 /* line 30, sass/partials/_header.scss */
-nav li {
+.header-nav .menu-item {
   float: left;
 }
 
 /* line 34, sass/partials/_header.scss */
-.nav-link {
+.header-nav a {
   padding: 0 2.5rem;
   display: inline-block;
   font-family: "lato", Helvetica, sans-serif;
