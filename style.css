@@ -1,23 +1,200 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
-
-Backtrace:
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Ruby22-x64/bin/sass:23:in `load'
-C:/Ruby22-x64/bin/sass:23:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
+/*Edited slightly to fit my project's needs*/
+/* line 7, sass/partials/_reset.scss */
+html {
+  font-size: 0.625em;
+}
+
+/* line 10, sass/partials/_reset.scss */
+body {
+  position: relative;
+}
+
+/* line 13, sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 31, sass/partials/_reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 35, sass/partials/_reset.scss */
+mark {
+  background-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 39, sass/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 43, sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 46, sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 49, sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 54, sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, sass/partials/_typography.scss */
+h1 {
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 4.8rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+}
+
+/* line 10, sass/partials/_typography.scss */
+h2 {
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.175rem;
+}
+
+/* line 19, sass/partials/_typography.scss */
+h3 {
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+}
+
+/* line 28, sass/partials/_typography.scss */
+h4 {
+  font-family: "lato", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* line 1, sass/partials/_header.scss */
+header {
+  margin: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+/* line 9, sass/partials/_header.scss */
+mark {
+  margin: 0 1rem;
+}
+
+/* line 13, sass/partials/_header.scss */
+.intro-txt {
+  display: inline-block;
+}
+
+/* line 17, sass/partials/_header.scss */
+.header-contact {
+  float: right;
+  line-height: 3.6rem;
+}
+
+/* line 22, sass/partials/_header.scss */
+.contact-link:hover {
+  color: #000000;
+}
+
+/* line 26, sass/partials/_header.scss */
+nav {
+  margin-top: 5rem;
+}
+
+/* line 30, sass/partials/_header.scss */
+nav li {
+  float: left;
+}
+
+/* line 34, sass/partials/_header.scss */
+.nav-link {
+  padding: 0 2.5rem;
+  display: inline-block;
+  font-family: "lato", Helvetica, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+/* line 1, sass/partials/_footer.scss */
+footer {
+  padding: 6rem 5rem 2.5rem;
+}
+
+/* line 5, sass/partials/_footer.scss */
+.footer-nav {
+  display: inline-block;
+}
+
+/* line 9, sass/partials/_footer.scss */
+.footer-contact {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+/* line 15, sass/partials/_footer.scss */
+footer li {
+  margin: 0.2rem 0;
+}
+
+/* line 19, sass/partials/_footer.scss */
+.footer-link {
+  font-family: "lato", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #767676;
+  letter-spacing: 0.05rem;
+}
+
+/* line 26, sass/partials/_footer.scss */
+.footer-link:hover {
+  color: #000000;
+}
