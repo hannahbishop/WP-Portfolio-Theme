@@ -23,6 +23,6 @@
                     <li><a class="nav-link" href="#">About</a></li>
                 </ul>
             </nav>-->
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '') ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>
         <div class="container">
