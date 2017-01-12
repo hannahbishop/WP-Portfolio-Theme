@@ -8,13 +8,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			$query = new WP_Query( 'post_type' => 'projects' );
-			if ( $query->have_posts() ) : ?>
-			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-					<?php the_content(); ?>
-				</div>
-			<?php endwhile; wp_reset_postdata(); ?>
+			<?php $loop = new WP_Query( array( 'post_type' => 'projects', 'posts_per_page' => -1 ) ); ?>
+			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			The stuff you want to loop goes in here
+			<?php endwhile; wp_reset_query(); ?>
 			/*while ( have_posts() ) : the_post();
 				get_template_part( 'content', get_post_format() );
 			endwhile;
