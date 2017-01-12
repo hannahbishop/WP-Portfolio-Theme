@@ -1,4 +1,3 @@
-        </div> <!--- /.container --->
         <footer>
             <section class="footer-nav">
                 <h4>Hannah Bishop</h4>

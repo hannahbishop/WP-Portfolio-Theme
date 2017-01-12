@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <title>Hannah Bishop</title>
         <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
@@ -8,7 +8,7 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <?php wp_head();?>
     </head>
-    
+
     <body>
         <header>
             <span class="intro-txt">
@@ -25,4 +25,3 @@
             </nav>-->
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>
-        <div class="container">
