@@ -6,6 +6,6 @@
 		?>
     <a class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="background-image:url($thumb_url)"></a>
 		<h3><?php the_title();?></h3>
-		<p><?php the_excerpt();?></p>
+		<?php the_excerpt();?>
 		<a href="<?php the_permalink(); ?>">Process Details</a>
 </div>
