@@ -18,5 +18,19 @@
             </section>
         </footer>
         <?php wp_footer(); ?>
+        <!---Scripts @ bottom to reduce load time--->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_directory');?>/js/masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="https://use.typekit.net/mgj7tll.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script>
+          $('.grid').masonry({
+            // set itemSelector so .grid-sizer is not used in layout
+            itemSelector: '.grid-item',
+            // use element for option
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+          })
+        </script>
     </body>
 </html>
