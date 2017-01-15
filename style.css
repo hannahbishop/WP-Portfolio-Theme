@@ -201,10 +201,14 @@ footer a:hover {
 
 /* line 1, sass/partials/_project.scss */
 .project {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-/* line 5, sass/partials/_project.scss */
+/* line 9, sass/partials/_project.scss */
 .project-info {
   display: none;
   position: absolute;
@@ -216,7 +220,7 @@ footer a:hover {
 }
 
 /*---Hover Styling---*/
-/* line 16, sass/partials/_project.scss */
+/* line 20, sass/partials/_project.scss */
 .project:hover .project-info {
   display: initial;
 }
@@ -230,5 +234,13 @@ footer a:hover {
 /* line 6, sass/partials/_grid.scss */
 .grid-item {
   width: 33.33%;
+  position: relative;
   min-width: 320px;
+}
+
+/* line 12, sass/partials/_grid.scss */
+.grid-item:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }

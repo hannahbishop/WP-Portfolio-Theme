@@ -5,5 +5,12 @@
 
 .grid-item {
   width: 33.33%;
+  position: relative;
   min-width: 320px;//small enough to fill the screen of an iphone 4
+}
+
+.grid-item:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
