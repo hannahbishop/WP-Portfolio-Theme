@@ -13,8 +13,7 @@ get_header(); ?>
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="grid-item">
-						<?php the_title();?>
-						<?php get_template_part( 'content-projects', get_post_format() );?>
+						<?php get_template_part( 'content-project', get_post_format() );?>
 					</div>
 				<?php endwhile; wp_reset_query(); ?>
 			</div>
