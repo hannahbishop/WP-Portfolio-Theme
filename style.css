@@ -133,25 +133,21 @@ mark {
 /* line 9, sass/partials/_header.scss */
 .intro-txt {
   display: inline-block;
+  margin-bottom: 5rem;
 }
 
-/* line 13, sass/partials/_header.scss */
+/* line 14, sass/partials/_header.scss */
 .header-contact {
   float: right;
   line-height: 3.6rem;
 }
 
-/* line 18, sass/partials/_header.scss */
+/* line 19, sass/partials/_header.scss */
 .contact-link:hover {
   color: #000000;
 }
 
-/* line 22, sass/partials/_header.scss */
-.header-nav {
-  margin: 5rem;
-}
-
-/* line 27, sass/partials/_header.scss */
+/* line 24, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
@@ -159,13 +155,13 @@ mark {
   clear: both;
 }
 
-/* line 34, sass/partials/_header.scss */
+/* line 31, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
   margin-right: 2.5rem;
 }
 
-/* line 39, sass/partials/_header.scss */
+/* line 36, sass/partials/_header.scss */
 .header-nav a {
   padding: 0 2.5rem;
   display: inline-block;
@@ -239,21 +235,14 @@ footer a:hover {
 }
 
 /* line 1, sass/partials/_grid.scss */
-.grid {
-  width: 100%;
-  margin: 0 5rem;
-  clear: both;
-}
-
-/* line 7, sass/partials/_grid.scss */
 .grid-item {
   width: 33.33%;
   position: relative;
-  min-width: 320px;
   overflow: hidden;
+  float: left;
 }
 
-/* line 14, sass/partials/_grid.scss */
+/* line 8, sass/partials/_grid.scss */
 .grid-item:before {
   content: "";
   display: block;

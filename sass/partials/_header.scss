@@ -8,6 +8,7 @@ mark {
 
 .intro-txt {
     display: inline-block;
+    margin-bottom: 5rem;
 }
 
 .header-contact {
@@ -17,10 +18,6 @@ mark {
 
 .contact-link:hover {
     color: $primary-font-color;
-}
-
-.header-nav {
-    margin: 5rem;
 }
 
 //clearfix to prevent height collapse
