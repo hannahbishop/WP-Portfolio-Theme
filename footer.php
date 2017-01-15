@@ -23,9 +23,9 @@
         <!---<script src="<?php bloginfo('template_directory');?>/js/masonry.pkgd.min.js" type="text/javascript"></script>--->
         <script src="https://use.typekit.net/mgj7tll.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-        <script>
+        <!---<script>
           $('grid-item').height($('grid-item').width());
-        </script>
+        </script>--->
         <!---<script>
           $('.grid').masonry({
             // set itemSelector so .grid-sizer is not used in layout
