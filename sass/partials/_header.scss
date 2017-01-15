@@ -1,9 +1,5 @@
 header {
     margin: 2.5rem;
-    /*position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;*/
 }
 
 mark {
@@ -24,11 +20,20 @@ mark {
 }
 
 .header-nav {
-    margin-top: 5rem;
+    margin: 5rem;
+}
+
+//clearfix to prevent height collapse
+.header-nav::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 .header-nav .menu-item {
     float: left;
+    margin-right: 2.5rem;
 }
 
 .header-nav a {

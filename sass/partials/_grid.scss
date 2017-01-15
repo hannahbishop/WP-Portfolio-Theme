@@ -1,12 +1,14 @@
 .grid {
   width: 100%;
   margin: 0 5rem;
+  clear: both; //to prevent wrapping
 }
 
 .grid-item {
   width: 33.33%;
   position: relative;
   min-width: 320px;//small enough to fill the screen of an iphone 4
+  overflow: hidden;
 }
 
 .grid-item:before {

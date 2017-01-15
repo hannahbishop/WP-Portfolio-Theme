@@ -19,7 +19,7 @@
         </footer>
         <?php wp_footer(); ?>
         <!---Scripts @ bottom to reduce load time--->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--->
         <!---<script src="<?php bloginfo('template_directory');?>/js/masonry.pkgd.min.js" type="text/javascript"></script>--->
         <script src="https://use.typekit.net/mgj7tll.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
