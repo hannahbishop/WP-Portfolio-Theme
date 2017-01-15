@@ -7,16 +7,19 @@
 }
 
 .project-info {
-  display: none; //don't display until a project is hovered on
+  opacity: 0; //don't display until a project is hovered on
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0,0,0,0.6);
+  transition: all 0.3s ease-in-out;
 }
 
 /*---Hover Styling---*/
 .project:hover .project-info {
-  display: initial;
+  opacity: 1;
+  background: rgba(255,255,255,0.85);
+  border: 2.5rem solid transparent;
+  padding: 2.5rem;
 }
