@@ -195,14 +195,30 @@ footer a:hover {
   bottom: 0;
   right: 0;
   left: 0;
-  transition: all 0.3s ease-in-out; }
+  transition: background 0.15s ease-in-out, border 0.15s ease-in-out; }
+
+/* line 19, sass/partials/_project.scss */
+.project h3 {
+  color: white;
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem; }
+
+/* line 26, sass/partials/_project.scss */
+.project p {
+  color: #e4e4e4;
+  font-family: "lato", Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem; }
 
 /*---Hover Styling---*/
-/* line 20, sass/partials/_project.scss */
+/* line 35, sass/partials/_project.scss */
 .project:hover .project-info {
   opacity: 1;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.6);
   border: 2.5rem solid transparent;
+  background-clip: padding-box;
   padding: 2.5rem; }
 
 /* line 1, sass/partials/_grid.scss */
