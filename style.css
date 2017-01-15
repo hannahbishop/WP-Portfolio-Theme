@@ -189,13 +189,13 @@ footer a:hover {
 
 /* line 9, sass/partials/_project.scss */
 .project-info {
-  opacity: 0;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  transition: background 0.15s ease-in-out, border 0.15s ease-in-out; }
+  padding: 2.5rem;
+  transition: all 0.3s ease-in-out; }
 
 /* line 19, sass/partials/_project.scss */
 .project h3 {
@@ -216,10 +216,7 @@ footer a:hover {
 /* line 35, sass/partials/_project.scss */
 .project:hover .project-info {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.6);
-  border: 2.5rem solid transparent;
-  background-clip: padding-box;
-  padding: 2.5rem; }
+  background: rgba(0, 0, 0, 0.6); }
 
 /* line 1, sass/partials/_grid.scss */
 .grid-item {
