@@ -1,4 +1,9 @@
-.grid-sizer,
+.grid {
+  width: 100%;
+  margin: 0 5rem;
+}
+
 .grid-item {
   width: 33.33%;
+  min-width: 320px;//small enough to fill the screen of an iphone 4
 }

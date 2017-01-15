@@ -116,10 +116,10 @@ h4 {
 /* line 1, sass/partials/_header.scss */
 header {
   margin: 2.5rem;
-  position: absolute;
+  /*position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  left: 0;*/
 }
 
 /* line 9, sass/partials/_header.scss */
@@ -222,7 +222,13 @@ footer a:hover {
 }
 
 /* line 1, sass/partials/_grid.scss */
-.grid-sizer,
+.grid {
+  width: 100%;
+  margin: 0 5rem;
+}
+
+/* line 6, sass/partials/_grid.scss */
 .grid-item {
   width: 33.33%;
+  min-width: 320px;
 }
