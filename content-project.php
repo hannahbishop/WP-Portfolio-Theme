@@ -7,7 +7,8 @@
     <a class="img-link" href="<?php the_permalink();?>" title="<?php the_title();?>">
 				<img class="feature-img" src="<?php echo $thumb_url ?>" alt="<?php the_title();?>">
 		</a>
-		<h3><?php the_title();?></h3>
-		<?php the_excerpt();?>
-		<a href="<?php the_permalink(); ?>">Process Details</a>
+		<div class="project-info">
+			<h3><?php the_title();?></h3>
+			<?php the_excerpt();?>
+		</div>
 </div>
