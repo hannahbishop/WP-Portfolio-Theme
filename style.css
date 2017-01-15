@@ -198,3 +198,29 @@ footer a {
 footer a:hover {
   color: #000000;
 }
+
+/* line 1, sass/partials/_project.scss */
+.project {
+  width: 33.33%;
+  height: 33.33%;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+/* line 9, sass/partials/_project.scss */
+.project-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*---Hover Styling---*/
+/* line 20, sass/partials/_project.scss */
+.project:hover .project-info {
+  display: initial;
+}

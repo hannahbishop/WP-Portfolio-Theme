@@ -3,7 +3,7 @@
 
     <head>
         <title>Hannah Bishop</title>
-        <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
         <script src="https://use.typekit.net/mgj7tll.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <?php wp_head();?>
