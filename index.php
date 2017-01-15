@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main" data-columns>
 
 			<?php $loop = new WP_Query( array( 'post_type' => 'projects', 'posts_per_page' => -1 ) ); ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
