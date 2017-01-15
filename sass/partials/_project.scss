@@ -1,0 +1,22 @@
+.project {
+    width: 33.33%;
+    height: 33.33%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.project-info {
+  display: none; //don't display until a project is hovered on
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/*---Hover Styling---*/
+.project:hover .project-info {
+  display: initial;
+}
