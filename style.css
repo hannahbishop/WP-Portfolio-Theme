@@ -5,20 +5,17 @@
 /*Edited slightly to fit my project's needs*/
 /* line 7, sass/partials/_reset.scss */
 html {
-  font-size: 0.625em;
-}
+  font-size: 0.625em; }
 
 /* line 10, sass/partials/_reset.scss */
 body {
-  position: relative;
-}
+  position: relative; }
 
 /* line 13, sass/partials/_reset.scss */
 main {
   width: 100%;
   padding: 0 5rem;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* line 18, sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
@@ -37,49 +34,41 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* line 36, sass/partials/_reset.scss */
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 /* line 40, sass/partials/_reset.scss */
 mark {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 /* HTML5 display-role reset for older browsers */
 /* line 44, sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 /* line 48, sass/partials/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 /* line 51, sass/partials/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 /* line 54, sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 /* line 59, sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* line 1, sass/partials/_typography.scss */
 h1 {
@@ -88,8 +77,7 @@ h1 {
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
-  letter-spacing: 0.1rem;
-}
+  letter-spacing: 0.1rem; }
 
 /* line 10, sass/partials/_typography.scss */
 h2 {
@@ -98,8 +86,7 @@ h2 {
   color: #767676;
   text-transform: uppercase;
   font-weight: normal;
-  letter-spacing: 0.175rem;
-}
+  letter-spacing: 0.175rem; }
 
 /* line 19, sass/partials/_typography.scss */
 h3 {
@@ -108,8 +95,7 @@ h3 {
   color: #767676;
   text-transform: uppercase;
   font-weight: normal;
-  letter-spacing: 0.15rem;
-}
+  letter-spacing: 0.15rem; }
 
 /* line 28, sass/partials/_typography.scss */
 h4 {
@@ -117,49 +103,41 @@ h4 {
   font-size: 1.2rem;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
-}
+  letter-spacing: 0.05rem; }
 
 /* line 1, sass/partials/_header.scss */
 header {
-  margin: 2.5rem;
-}
+  margin: 2.5rem; }
 
 /* line 5, sass/partials/_header.scss */
 mark {
-  margin: 0 1rem;
-}
+  margin: 0 1rem; }
 
 /* line 9, sass/partials/_header.scss */
 .intro-txt {
   display: inline-block;
-  margin-bottom: 5rem;
-}
+  margin-bottom: 5rem; }
 
 /* line 14, sass/partials/_header.scss */
 .header-contact {
   float: right;
-  line-height: 3.6rem;
-}
+  line-height: 3.6rem; }
 
 /* line 19, sass/partials/_header.scss */
 .contact-link:hover {
-  color: #000000;
-}
+  color: #000000; }
 
 /* line 24, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
   height: 0;
-  clear: both;
-}
+  clear: both; }
 
 /* line 31, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
-  margin-right: 2.5rem;
-}
+  margin-right: 2.5rem; }
 
 /* line 36, sass/partials/_header.scss */
 .header-nav a {
@@ -169,44 +147,37 @@ mark {
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   font-weight: lighter;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 /* line 1, sass/partials/_footer.scss */
 footer {
   padding: 6rem 5rem 2.5rem;
-  clear: both;
-}
+  clear: both; }
 
 /* line 6, sass/partials/_footer.scss */
 .footer-nav {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* line 10, sass/partials/_footer.scss */
 .footer-contact {
   display: inline-block;
   float: right;
-  text-align: right;
-}
+  text-align: right; }
 
 /* line 16, sass/partials/_footer.scss */
 footer li {
-  margin: 0.2rem 0;
-}
+  margin: 0.2rem 0; }
 
 /* line 20, sass/partials/_footer.scss */
 footer a {
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.2rem;
   color: #767676;
-  letter-spacing: 0.05rem;
-}
+  letter-spacing: 0.05rem; }
 
 /* line 27, sass/partials/_footer.scss */
 footer a:hover {
-  color: #000000;
-}
+  color: #000000; }
 
 /* line 1, sass/partials/_project.scss */
 .project {
@@ -214,37 +185,35 @@ footer a:hover {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-}
+  right: 0; }
 
 /* line 9, sass/partials/_project.scss */
 .project-info {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
+  transition: all 0.3s ease-in-out; }
 
 /*---Hover Styling---*/
 /* line 20, sass/partials/_project.scss */
 .project:hover .project-info {
-  display: initial;
-}
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2.5rem solid transparent;
+  padding: 2.5rem; }
 
 /* line 1, sass/partials/_grid.scss */
 .grid-item {
   width: 33.33%;
   position: relative;
   overflow: hidden;
-  float: left;
-}
+  float: left; }
 
 /* line 8, sass/partials/_grid.scss */
 .grid-item:before {
   content: "";
   display: block;
-  padding-top: 100%;
-}
+  padding-top: 100%; }
