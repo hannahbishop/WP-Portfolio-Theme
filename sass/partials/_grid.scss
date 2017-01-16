@@ -1,8 +1,13 @@
+.grid {
+  margin: -$grid-border-width;
+}
+
 .grid-item {
   width: 33.33%;
   position: relative;
   overflow: hidden;
   float: left;
+  border: $grid-border-width solid #ffffff;
 }
 
 .grid-item:before {
