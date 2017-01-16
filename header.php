@@ -11,17 +11,10 @@
 
     <body>
         <header>
-            <span class="intro-txt">
+            <a class="branding" href="<?php home_url(); ?>">
                 <h1>Hannah Bishop</h1>
                 <h2>Comp Sci Student in Victoria BC</h2>
-            </span>
+            </a>
             <h3 class="header-contact">(250) 889 4187<mark>/</mark><a class="contact-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a></h3>
-            <!--<nav>
-                <ul>
-                    <li><a class="nav-link" href="#">Projects</a></li>
-                    <li><a class="nav-link" href="#">Resume</a></li>
-                    <li><a class="nav-link" href="#">About</a></li>
-                </ul>
-            </nav>-->
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>
