@@ -191,6 +191,18 @@ footer a:hover {
   background-repeat: no-repeat; }
 
 /* line 12, sass/partials/_project.scss */
+.project-thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out; }
+
+/* line 24, sass/partials/_project.scss */
 .project-info {
   position: absolute;
   top: 0;
@@ -200,7 +212,7 @@ footer a:hover {
   padding: 2.5rem;
   transition: all 0.3s ease-in-out; }
 
-/* line 22, sass/partials/_project.scss */
+/* line 34, sass/partials/_project.scss */
 .project h3 {
   color: transparent;
   font-family: "bebas-neue", Helvetica, sans-serif;
@@ -208,7 +220,7 @@ footer a:hover {
   letter-spacing: 0.1rem;
   transition: all 0.3s ease-in-out; }
 
-/* line 30, sass/partials/_project.scss */
+/* line 42, sass/partials/_project.scss */
 .project p {
   color: transparent;
   font-family: "lato", Helvetica, sans-serif;
@@ -218,16 +230,23 @@ footer a:hover {
   transition: all 0.3s ease-in-out; }
 
 /*---Hover Styling---*/
-/* line 40, sass/partials/_project.scss */
+/* line 52, sass/partials/_project.scss */
 .project:hover .project-info {
   opacity: 1;
   background: rgba(0, 0, 0, 0.6); }
 
-/* line 45, sass/partials/_project.scss */
+/* line 57, sass/partials/_project.scss */
+.project:hover .project-thumbnail {
+  top: -2rem;
+  bottom: -2rem;
+  left: -2rem;
+  right: -2rem; }
+
+/* line 64, sass/partials/_project.scss */
 .project:hover h3 {
   color: #ffffff; }
 
-/* line 49, sass/partials/_project.scss */
+/* line 68, sass/partials/_project.scss */
 .project:hover p {
   color: #e4e4e4; }
 
