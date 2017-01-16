@@ -114,7 +114,7 @@ mark {
   margin: 0 1rem; }
 
 /* line 9, sass/partials/_header.scss */
-.intro-txt {
+.branding {
   display: inline-block;
   margin-bottom: 5rem; }
 
@@ -151,7 +151,7 @@ mark {
 
 /* line 1, sass/partials/_footer.scss */
 footer {
-  padding: 6rem 5rem 2.5rem;
+  padding: 6rem 2.5rem 2.5rem;
   clear: both; }
 
 /* line 6, sass/partials/_footer.scss */
@@ -232,13 +232,18 @@ footer a:hover {
   color: #e4e4e4; }
 
 /* line 1, sass/partials/_grid.scss */
+.grid {
+  margin: -0.5rem; }
+
+/* line 5, sass/partials/_grid.scss */
 .grid-item {
   width: 33.33%;
   position: relative;
   overflow: hidden;
-  float: left; }
+  float: left;
+  border: 0.5rem solid #ffffff; }
 
-/* line 8, sass/partials/_grid.scss */
+/* line 13, sass/partials/_grid.scss */
 .grid-item:before {
   content: "";
   display: block;
