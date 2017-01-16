@@ -241,9 +241,10 @@ footer a:hover {
   position: relative;
   overflow: hidden;
   float: left;
-  border: 0.5rem solid #ffffff; }
+  border: 0.5rem solid #ffffff;
+  box-sizing: border-box; }
 
-/* line 13, sass/partials/_grid.scss */
+/* line 14, sass/partials/_grid.scss */
 .grid-item:before {
   content: "";
   display: block;

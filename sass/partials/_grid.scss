@@ -8,6 +8,7 @@
   overflow: hidden;
   float: left;
   border: $grid-border-width solid #ffffff;
+  box-sizing: border-box;
 }
 
 .grid-item:before {
