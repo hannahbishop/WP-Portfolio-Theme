@@ -1,3 +1,0 @@
-<p>
-  Goodbye World
-</p>
