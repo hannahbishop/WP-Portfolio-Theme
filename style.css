@@ -116,22 +116,31 @@ mark {
   line-height: 3.6rem; }
 
 /* line 28, sass/partials/_header.scss */
+.contact-link {
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.15rem; }
+
+/* line 37, sass/partials/_header.scss */
 .contact-link:hover {
   color: #000000; }
 
-/* line 33, sass/partials/_header.scss */
+/* line 42, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
   height: 0;
   clear: both; }
 
-/* line 40, sass/partials/_header.scss */
+/* line 49, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
   margin-right: 2.5rem; }
 
-/* line 45, sass/partials/_header.scss */
+/* line 54, sass/partials/_header.scss */
 .header-nav a {
   padding: 0 2.5rem;
   display: inline-block;
