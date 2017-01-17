@@ -25,13 +25,22 @@ mark {
     line-height: 3.6rem;
 }
 
-.contact-link {
+.contact-link,
+.header-contact mark {
   font-family: $primary-font-stack;
   font-size: 1.8rem;
-  color: $secondary-font-color;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
+}
+
+.header-contact mark {
+  color: $primary-font-color;
+}
+
+.contact-link {
+  color: $secondary-font-color;
+  transition: all 0.15s ease-in-out;
 }
 
 .contact-link:hover {

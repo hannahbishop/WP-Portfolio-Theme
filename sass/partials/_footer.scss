@@ -30,6 +30,7 @@ footer a {
     font-size: 1.2rem;
     color: $secondary-font-color;
     letter-spacing: 0.05rem;
+    transition: all 0.15s ease-in-out;
 }
 
 footer a:hover {
