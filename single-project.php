@@ -7,9 +7,7 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-		    <p>
-					Hello World
-				</p>
+		    <?php the_title();?>
 
 		</main>
 
