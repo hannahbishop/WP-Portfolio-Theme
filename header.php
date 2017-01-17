@@ -13,8 +13,12 @@
         <header>
             <a class="branding" href="<?php home_url(); ?>">
                 <h1>Hannah Bishop</h1>
-                <h2>Comp Sci Student in Victoria BC</h2>
+                <p class="branding-subtitle">Comp Sci Student in Victoria BC</p>
             </a>
-            <h3 class="header-contact">(250) 889 4187<mark>/</mark><a class="contact-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a></h3>
+            <span class="header-contact">
+              <a class="contact-link" href="tel:1-250-889-4187">(250) 889 4187</a>
+              <mark>/</mark>
+              <a class="contact-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
+            </span>
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>
