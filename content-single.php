@@ -6,15 +6,15 @@
     <h3><?php the_title();?></h3>
     <section>
       <h4>Problem</h4>
-      <p><?php echo get_post_meta(get_the_ID(), 'problem'); ?> </p>
+      <p><?php echo get_post_meta(get_the_ID(), 'problem', true); ?> </p>
     </section>
     <section>
       <h4>Approach</h4>
-      <p><?php echo get_post_meta(get_the_ID(), 'approach'); ?> </p>
+      <p><?php echo get_post_meta(get_the_ID(), 'approach', true); ?> </p>
     </section>
     <section>
       <h4>Details</h4>
-      <p><?php echo get_post_meta(get_the_ID(), 'details'); ?> </p>
+      <p><?php echo get_post_meta(get_the_ID(), 'details', true); ?> </p>
     </section>
   </article>
 </div>
