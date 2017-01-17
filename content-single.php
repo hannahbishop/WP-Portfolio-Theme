@@ -1,19 +1,19 @@
 <div class="project-single">
   <div class="project-imgs">
     <?php
-        $query_images_args = array(
-            'post_type'      => 'attachment',
-            'post_mime_type' => 'image',// video files include
-            'post_status'    => 'inherit',
-            'orderby'        => 'post_date',
-            'posts_per_page' =>  30,
-        );
-        $query_images = new WP_Query( $query_images_args );
-        if($query_images->have_posts()) :
-            while($query_images->have_posts()) : $query_images->the_post(); ?>
-            <?php echo $images = wp_get_attachment_image( $query_images->posts->ID ); ?>
-            <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
+    $args = array(
+      'post_type' => 'attachment',
+      'numberposts' => null,
+      'post_status' => null,
+      'post_parent' => $post->ID
+    );
+    $attachments = get_posts($args);
+    if ($attachments) {
+      foreach ($attachments as $attachment) {
+      the_attachment_link($attachment->ID, false);
+    }
+  }?>
+
   </div>
   <article class="project-details">
     <h3><?php the_title();?></h3>
