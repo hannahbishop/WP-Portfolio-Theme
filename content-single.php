@@ -11,6 +11,7 @@
     if ($attachments) {
       foreach ($attachments as $attachment) {
       the_attachment_link($attachment->ID, false);
+      echo get_attached_file($attachment->ID);
     }
   }?>
 
