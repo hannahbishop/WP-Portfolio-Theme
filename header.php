@@ -11,7 +11,7 @@
 
     <body>
         <header>
-            <a class="branding" href="<?php home_url(); ?>">
+            <a class="branding" href="http://hannahbishop.com">
                 <h1>Hannah Bishop</h1>
                 <p class="branding-subtitle">Comp Sci Student in Victoria BC</p>
             </a>
