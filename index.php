@@ -9,7 +9,7 @@ get_header(); ?>
 
 			<div class="grid">
 				<?php $loop = new WP_Query(
-					array( 'post_type' => 'project', 'posts_per_page' => -1 ) );
+					array( 'post_type' => 'projects', 'posts_per_page' => -1 ) );
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="grid-item">
