@@ -15,7 +15,7 @@ get_header(); ?>
 					<div class="grid-item">
 						<?php get_template_part( 'content', get_post_format() );?>
 					</div>
-				<?php endwhile; wp_reset_postdata(); ?>
+				<?php endwhile; wp_reset_query(); ?>
 			</div>
 
 		</main>
