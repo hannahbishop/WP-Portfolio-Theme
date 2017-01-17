@@ -390,3 +390,22 @@ footer img {
   font-size: 2.4rem;
   color: #000000;
 }
+
+/* line 30, sass/partials/_project-single.scss */
+.project-single .file-link {
+  text-transform: lowercase;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: "$secondary-font-stack";
+  font-style: italic;
+}
+
+/* line 38, sass/partials/_project-single.scss */
+.project-details-header {
+  margin-bottom: 5rem;
+}
+
+/* line 42, sass/partials/_project-single.scss */
+.project-details-sctn {
+  margin-bottom: 2.5rem;
+}
