@@ -5,6 +5,8 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
         <?php the_title()?>
+        <?php the_content()?>
+        <?php echo get_post_meta( get_the_ID(), 'test', true );?>
 
     </main><!-- .site-main -->
 
