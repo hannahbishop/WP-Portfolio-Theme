@@ -5,9 +5,7 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
       <?php while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
-        <?php  the_content();  ?>
-      
+        <?php get_template_part( 'content', 'single' ); ?>
       <?php endwhile; ?>
 
     </main><!-- .site-main -->
