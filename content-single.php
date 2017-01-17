@@ -1,10 +1,9 @@
 <div class="project-single">
-  <?php $colour = get_post_meta(get_the_ID(), 'colour');? ?>
   <div class="project-imgs">
     <?php the_content();?>
   </div>
   <article class="project-details">
-    <h3 style="color: <?php echo $colour?>"><?php the_title();?></h3>
+    <h3><?php the_title();?></h3>
     <section>
       <h4>Problem</h4>
       <p><?php get_post_meta(get_the_ID(), 'problem'); ?> </p>

@@ -361,7 +361,7 @@ footer img {
 }
 
 /* line 15, sass/partials/_project-single.scss */
-.project-info {
+.project-details {
   display: fixed;
   top: 0;
   width: 50%;
