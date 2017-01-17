@@ -3,8 +3,8 @@
   <div class="project-imgs">
     <?php the_content();?>
   </div>
-  <article class="project-info">
-    <h3 style="color: <?php $colour?>"><?php the_title();?></h3>
+  <article class="project-details">
+    <h3 style="color: <?php echo $colour?>"><?php the_title();?></h3>
     <section>
       <h4>Problem</h4>
       <p><?php get_post_meta(get_the_ID(), 'problem'); ?> </p>
