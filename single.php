@@ -4,14 +4,11 @@ get_header(); ?>
 
     <main id="main" class="site-main" role="main">
 
-        <?php $loop = new WP_Query(
-					array( 'post_type' => 'projects', 'posts_per_page' => -1 ) );
-				?>
-				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <?php the_title();?>
-          <?php the_content();?>
-          <?php echo get_post_meta( get_the_ID(), 'test', true );?>
-				<?php endwhile; wp_reset_query(); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <h1><?php the_title(); ?></h1>
+        <?php  the_content();  ?>
+      
+      <?php endwhile; ?>
 
     </main><!-- .site-main -->
 
