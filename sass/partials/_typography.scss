@@ -18,3 +18,19 @@ h3 {
     font-weight: normal;
     letter-spacing: 0.15rem;
 }
+
+h4 {
+  font-family: $secondary-font-stack;
+  font-size: 1.4rem;
+  color: $primary-font-color;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.25rem;
+
+p {
+  font-family: $secondary-font-stack;
+  font-size: 1.4rem;
+  color: $secondary-font-color;
+  letter-spacing: 0.01rem;
+  line-height: 2rem;
+}
