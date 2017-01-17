@@ -121,7 +121,7 @@ p {
 }
 
 /* line 1, sass/partials/_header.scss */
-header {
+.site-header {
   padding: 2.5rem;
 }
 
