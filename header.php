@@ -13,12 +13,12 @@
         <header class="site-header">
             <a class="branding" href="http://hannahbishop.com">
                 <h1>Hannah Bishop</h1>
-                <p class="branding-subtitle">Comp Sci Student in Victoria BC</p>
+                <p class="branding-subtitle">Front End Dev, UI/UX</p>
             </a>
-            <span class="header-contact">
-              <a class="contact-link" href="tel:1-250-889-4187">(250) 889 4187</a>
+            <span class="header-links">
+              <a href="#">Resume</a>
               <mark>/</mark>
-              <a class="contact-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
+              <a href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
             </span>
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>

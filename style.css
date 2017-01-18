@@ -147,14 +147,14 @@ mark {
 }
 
 /* line 23, sass/partials/_header.scss */
-.header-contact {
+.header-links {
   float: right;
   line-height: 3.6rem;
 }
 
 /* line 28, sass/partials/_header.scss */
-.contact-link,
-.header-contact mark {
+.header-links a,
+.header-links mark {
   font-family: "bebas-neue", Helvetica, sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -163,18 +163,18 @@ mark {
 }
 
 /* line 37, sass/partials/_header.scss */
-.header-contact mark {
+.header-links mark {
   color: #000000;
 }
 
 /* line 41, sass/partials/_header.scss */
-.contact-link {
+.header-links a {
   color: #767676;
   transition: all 0.15s ease-in-out;
 }
 
 /* line 46, sass/partials/_header.scss */
-.contact-link:hover {
+.header-links a:hover {
   color: #000000;
 }
 

@@ -20,13 +20,13 @@ mark {
     letter-spacing: 0.175rem;
 }
 
-.header-contact {
+.header-links {
     float: right;
     line-height: 3.6rem;
 }
 
-.contact-link,
-.header-contact mark {
+.header-links a,
+.header-links mark {
   font-family: $primary-font-stack;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -34,16 +34,16 @@ mark {
   letter-spacing: 0.15rem;
 }
 
-.header-contact mark {
+.header-links mark {
   color: $primary-font-color;
 }
 
-.contact-link {
+.header-links a {
   color: $secondary-font-color;
   transition: all 0.15s ease-in-out;
 }
 
-.contact-link:hover {
+.header-links a:hover {
     color: $primary-font-color;
 }
 
