@@ -19,7 +19,7 @@
 
 	//enqueue typescript fonts
 	//https://gist.github.com/robneu/6400399
-	add_action( 'wp_enqueue_scripts', 'portfolio_enqueue_scripts' );
+	/*add_action( 'wp_enqueue_scripts', 'portfolio_enqueue_scripts' );
 	function portfolio_enqueue_scripts() {
 		wp_enqueue_script( 'typekit', '//use.typekit.net/drz0ojb.js', array(), '1.0.0', );
 	}
@@ -28,5 +28,5 @@
 		if ( wp_script_is( 'typekit', 'enqueued' ) ) {
 			echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
 		}
-	}
+	}*/
 ?>
