@@ -1,13 +1,13 @@
 .site-header {
-    padding: 2.5rem 2.5rem 1rem 2.5rem;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
 }
 
 mark {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .branding {
-    display: block;
+  display: block;
 }
 
 .branding h1 {
@@ -32,27 +32,61 @@ mark {
 }
 
 .header-links a:hover {
-    color: $primary-font-color;
+  color: $primary-font-color;
+}
+
+.header-nav {
+  margin-left: -2.5rem;
 }
 
 //clearfix to prevent height collapse
 .header-nav::after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .header-nav .menu-item {
-    float: left;
-    margin-right: 2.5rem;
+  float: left;
+  margin-right: 2.5rem;
 }
 
 .header-nav a {
-    padding: 0 2.5rem;
-    display: inline-block;
-    font-family: $primary-font-stack;
-    font-size: 2.2rem;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
+  position: relative;
+  padding: 0 2.5rem;
+  display: inline-block;
+  font-family: $primary-font-stack;
+  color: $secondary-font-color;
+  font-size: 2.2rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-nav a:active,
+.header-nav a:hover {
+  color: $primary-font-color;
+}
+
+.header-nav:active::before {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.header-nav a::before {
+  width: 2.5rem;
+  content: '>';
+  color: orangered;
+  font-size: 2.8rem;
+  line-height: 100%;
+  vertical-align: middle;
+  -webkit-transform: translateX(2.5rem);
+  -moz-transform: translateX(2.5rem);
+  transform: translateX(2.5rem);
+  display: inline-block;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
 }
