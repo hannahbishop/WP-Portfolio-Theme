@@ -2,7 +2,8 @@
   margin: -$grid-border-width;
 }
 
-.grid-item {
+.grid-item,
+.grid-sizer {
   width: 33.33%;
   position: relative;
   overflow: hidden;

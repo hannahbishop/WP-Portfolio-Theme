@@ -13,6 +13,8 @@
 			wp_deregister_script('jquery');
 			wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, '3.1.1', true);
 			wp_enqueue_script('jquery');
+			wp_enqueue_script('masonry');
+			wp_enqueue_script( 'script', get_template_directory_uri() . '/js/masonry_init.js');
 		}
 	}
 	add_action('init', 'script_init');
