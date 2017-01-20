@@ -14,9 +14,9 @@
             <a class="branding" href="http://hannahbishop.com">
                 <h1>Hannah Bishop</h1>
             </a>
-            <span class="header-links">
+            <div class="header-links">
               <a href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
               <a href="#">Resume</a>
-            </span>
+            </div>
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>

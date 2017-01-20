@@ -1,5 +1,5 @@
 .site-header {
-    padding: 2.5rem 2.5rem 1.25rem 2.5rem;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
 }
 
 mark {
@@ -8,16 +8,24 @@ mark {
 
 .branding {
     display: inline-block;
-    margin-bottom: 2.5rem;
+}
+
+.branding h1 {
+  line-height: 3.8rem;
+}
+
+.header-links {
+  margin-bottom: 2rem;
 }
 
 .header-links a {
+  display: block;
   font-family: $secondary-font-stack;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  color: $primary-font-color;
+  color: $secondary-font-color;
   transition: all 0.15s ease-in-out;
 }
 
@@ -42,7 +50,7 @@ mark {
     padding: 0 2.5rem;
     display: inline-block;
     font-family: $primary-font-stack;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
 }

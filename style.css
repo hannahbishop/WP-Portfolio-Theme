@@ -122,7 +122,7 @@ p {
 
 /* line 1, sass/partials/_header.scss */
 .site-header {
-  padding: 2.5rem 2.5rem 1.25rem 2.5rem;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
 }
 
 /* line 5, sass/partials/_header.scss */
@@ -133,26 +133,36 @@ mark {
 /* line 9, sass/partials/_header.scss */
 .branding {
   display: inline-block;
-  margin-bottom: 2.5rem;
 }
 
-/* line 14, sass/partials/_header.scss */
+/* line 13, sass/partials/_header.scss */
+.branding h1 {
+  line-height: 3.8rem;
+}
+
+/* line 17, sass/partials/_header.scss */
+.header-links {
+  margin-bottom: 2rem;
+}
+
+/* line 21, sass/partials/_header.scss */
 .header-links a {
+  display: block;
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  color: #000000;
+  color: #767676;
   transition: all 0.15s ease-in-out;
 }
 
-/* line 24, sass/partials/_header.scss */
+/* line 32, sass/partials/_header.scss */
 .header-links a:hover {
   color: #000000;
 }
 
-/* line 29, sass/partials/_header.scss */
+/* line 37, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
@@ -160,18 +170,18 @@ mark {
   clear: both;
 }
 
-/* line 36, sass/partials/_header.scss */
+/* line 44, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
   margin-right: 2.5rem;
 }
 
-/* line 41, sass/partials/_header.scss */
+/* line 49, sass/partials/_header.scss */
 .header-nav a {
   padding: 0 2.5rem;
   display: inline-block;
   font-family: "bebas-neue", Helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
