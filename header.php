@@ -11,9 +11,11 @@
 
     <body>
         <header class="site-header">
-            <a class="branding" href="http://hannahbishop.com">
-                <h1>Hannah Bishop</h1>
+          <div class="branding">
+            <a href="http://hannahbishop.com">
+              <h1>Hannah Bishop</h1>
             </a>
+          </div>
             <div class="header-links">
               <a href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
               <a href="#">Resume</a>
