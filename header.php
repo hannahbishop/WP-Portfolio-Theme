@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes() ?>>
 
     <head>
         <title>Hannah Bishop</title>
