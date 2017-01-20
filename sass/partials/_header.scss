@@ -11,35 +11,13 @@ mark {
     margin-bottom: 2.5rem;
 }
 
-.branding-subtitle {
-    font-family: $primary-font-stack;
-    font-size: 3rem;
-    color: $secondary-font-color;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 0.175rem;
-}
-
-.header-links {
-    float: right;
-    line-height: 3.6rem;
-}
-
-.header-links a,
-.header-links mark {
-  font-family: $primary-font-stack;
-  font-size: 1.8rem;
+.header-links a {
+  font-family: $secondary-font-stack;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
-}
-
-.header-links mark {
   color: $primary-font-color;
-}
-
-.header-links a {
-  color: $secondary-font-color;
   transition: all 0.15s ease-in-out;
 }
 
@@ -63,9 +41,8 @@ mark {
 .header-nav a {
     padding: 0 2.5rem;
     display: inline-block;
-    font-family: $secondary-font-stack;
+    font-family: $primary-font-stack;
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
-    font-weight: lighter;
     text-transform: uppercase;
 }
