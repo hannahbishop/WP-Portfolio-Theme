@@ -29,4 +29,15 @@
 			echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
 		}
 	}*/
+	function portfolio_typekit() {
+    wp_enqueue_script( 'portfolio_typekit', '//use.typekit.net/drz0ojb.js');
+	}
+	add_action( 'wp_enqueue_scripts', 'portfolio_typekit' );
+
+	function portfolio_typekit_inline() {
+  	if ( wp_script_is( 'portfolio_typekit', 'done' ) ) { ?>
+  		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<?php }
+		}
+		add_action( 'wp_head', 'portfolio_typekit_inline' );
 ?>
