@@ -378,11 +378,6 @@ footer img {
   box-sizing: border-box;
 }
 
-/* line 15, sass/partials/_grid.scss */
-.grid-item {
-  height: 350px;
-}
-
 /*
 .grid-item:before {
   content: "";
