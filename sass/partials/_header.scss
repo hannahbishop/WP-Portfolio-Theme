@@ -64,16 +64,6 @@ mark {
   transition: color 0.2s ease-in-out;
 }
 
-.header-nav a:active,
-.header-nav a:hover {
-  color: $primary-font-color;
-}
-
-.header-nav:active::before {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
 .header-nav a::before {
   width: 2.5rem;
   content: '>';
@@ -89,4 +79,17 @@ mark {
   transition: transform 0.3s, opacity 0.2s;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+}
+
+.header-nav .current-menu-item a {
+    color: #000000;
+}
+
+.header-nav a:hover {
+  color: $primary-font-color;
+}
+
+.header-nav a:hover::before, .header-nav .current-menu-item a::before {
+    opacity: 1;
+    transform: translateX(0);
 }
