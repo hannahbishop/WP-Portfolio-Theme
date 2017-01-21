@@ -203,7 +203,6 @@ mark {
   color: orangered;
   font-size: 2.8rem;
   line-height: 100%;
-  vertical-align: middle;
   -webkit-transform: translateX(2.5rem);
   -moz-transform: translateX(2.5rem);
   transform: translateX(2.5rem);
@@ -214,17 +213,17 @@ mark {
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
 }
 
-/* line 84, sass/partials/_header.scss */
+/* line 83, sass/partials/_header.scss */
 .header-nav .current-menu-item a {
   color: #000000;
 }
 
-/* line 88, sass/partials/_header.scss */
+/* line 87, sass/partials/_header.scss */
 .header-nav a:hover {
   color: #000000;
 }
 
-/* line 92, sass/partials/_header.scss */
+/* line 91, sass/partials/_header.scss */
 .header-nav a:hover::before, .header-nav .current-menu-item a::before {
   opacity: 1;
   transform: translateX(0);
