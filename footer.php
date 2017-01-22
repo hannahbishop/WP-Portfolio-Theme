@@ -16,17 +16,6 @@
                     <li><a class="footer-link" href="https://github.com/hannahbishop"><img src="<?php bloginfo('template_directory');?>/assets/img/GitHub-Mark-32px.png" alt="GitHub Mark"></a></li>
                 </ul>
             </section>
-            <script language="javascript" type="text/javascript">
-    // This line tells the script to run after the page is loaded,
-    // As well as allows you to use the `$` function within the script
-    jQuery(function($) {
-        $('#masonry-list').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: 'true'
-        });
-    });
-</script>
         </footer>
         <?php wp_footer(); ?>
     </body>
