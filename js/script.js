@@ -4,5 +4,6 @@ $(function() {
   var scene = new ScrollScene({triggerElement: ".site-header"})
     .setPin(".site-header")
     .addTo(controller)
+    .triggerHook("onLeave");
     .addIndicators();
 });
