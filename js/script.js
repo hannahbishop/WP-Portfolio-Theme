@@ -3,6 +3,6 @@ $(function() {
   var controller = new ScrollMagic();
   var scene = new ScrollScene({triggerElement: ".site-header"})
     .setPin(".site-header")
-    .addIndicators()
-    .addTo(controller);
+    .addTo(controller)
+    .addIndicators();
 });
