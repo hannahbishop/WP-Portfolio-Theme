@@ -8,7 +8,6 @@ $(function() {
 
   //Grid item scroll loading effect
   //only if images have loaded fully
-  $('.project-thumbnail').imagesLoaded( { background: true }, function() {
     $(".grid-item").each(function (index, elem) {
       var scrollMagicController = new ScrollMagic();
       var gridLoad = new TimelineMax();
@@ -24,5 +23,4 @@ $(function() {
        .triggerHook("onEnter")
        .addTo(scrollMagicController);
      });
-  });
 });
