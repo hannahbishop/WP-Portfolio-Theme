@@ -21,7 +21,6 @@ $(function() {
      .setTween(gridLoad)
      .reverse(false)
      .triggerHook("onEnter")
-     .addTo(scrollMagicController)
-     .addIndicators();
+     .addTo(scrollMagicController);
   });
 });
