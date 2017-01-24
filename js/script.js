@@ -1,5 +1,17 @@
 $(function() {
 
+  // init Masonry
+  var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+    $grid.masonry({
+      itemSelector: '.grid-item',
+      // use element for option
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      gutter: 10
+    });
+  });
+
   //Sticky header
   var controller = new ScrollMagic();
   var scene = new ScrollScene({triggerElement: ".site-header"})
