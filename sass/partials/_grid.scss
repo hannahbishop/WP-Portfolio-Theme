@@ -4,10 +4,18 @@
 
 .grid-item,
 .grid-sizer {
-  width: 33.33%;
+  //width: 33.33%;
   position: relative;
   overflow: hidden;
-  float: left;
+  //float: left;
   border: $grid-border-width solid #ffffff;
   box-sizing: border-box;
 }
+
+.grid[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 { width: 33.333%; }
