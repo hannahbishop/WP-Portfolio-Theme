@@ -8,6 +8,7 @@ $(function() {
     columnWidth: '.grid-sizer',
     percentPosition: true
   });
+  console.log('asdf');
 });
 
   //Sticky header
