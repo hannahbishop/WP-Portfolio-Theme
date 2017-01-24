@@ -5,7 +5,7 @@ $thumb_url = $thumb_url_array[0];
 ?>
 
 <div class="project">
-	<div class="project-thumbnail" style="background-image:url(<?php echo $thumb_url ?>)"></div><!---using background image here instead of img to allow for better positioning--->
+	<img class="project-thumbnail" src="<?php echo $thumb_url ?>" alt="<?php the_title();?>">
 	<a class="project-info" href="<?php the_permalink();?>" title="<?php the_title();?>">
 		<h3><?php the_title();?></h3>
 		<?php the_excerpt();?>

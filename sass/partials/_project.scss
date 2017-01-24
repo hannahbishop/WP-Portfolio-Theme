@@ -10,15 +10,9 @@
 }
 
 .project-thumbnail {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.3s ease-in-out;
+  width: 100%;
+  display: block;
+  transition: all 0.6s ease;
 }
 
 .project-info {
@@ -28,6 +22,7 @@
   right: 0;
   left: 0;
   padding: 2.5rem;
+  color: transparent;
   transition: all 0.3s ease-in-out;
 }
 
@@ -52,13 +47,11 @@
 .project:hover .project-info {
   opacity: 1;
   background: rgba(0, 0, 0, 0.6);
+  color: initial;
 }
 
 .project:hover .project-thumbnail {
-  top: -2rem;
-  bottom: -2rem;
-  left: -2rem;
-  right: -2rem;
+  @include scale(1.1);
 }
 
 .project:hover h3 {
