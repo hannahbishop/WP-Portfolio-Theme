@@ -1,13 +1,12 @@
-.grid {
-  margin: -$grid-border-width;
-}
-
 .grid-item,
 .grid-sizer {
-  width: 33.33%;
+  width: calc(33.33% - 10px);
   position: relative;
   overflow: hidden;
   float: left;
-  border: $grid-border-width solid #ffffff;
   box-sizing: border-box;
+}
+
+.grid-item {
+  margin-bottom: $grid-gutter-width;
 }
