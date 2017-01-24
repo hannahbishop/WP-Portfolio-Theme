@@ -12,7 +12,7 @@ $(function() {
       var scrollMagicController = new ScrollMagic();
       var gridLoad = new TimelineMax();
       gridLoad.add([
-        TweenMax.fromTo(elem, 1,{ opacity: 0 }, { opacity: 1 }),
+        TweenMax.fromTo(elem, 0.6,{ opacity: 0 }, { opacity: 1 }),
         TweenMax.fromTo(elem, 0.4,{ top: "10em" }, { top: "0em" })
       ]);
        var gridLoadScene = new ScrollScene({
