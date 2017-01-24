@@ -305,7 +305,7 @@ footer img {
   color: #e4e4e4; }
 
 /* line 1, sass/partials/_grid.scss */
-#grid {
+.grid {
   margin: 0rem; }
 
 /* line 5, sass/partials/_grid.scss */
@@ -317,7 +317,7 @@ footer img {
   box-sizing: border-box; }
 
 /* line 15, sass/partials/_grid.scss */
-#grid[data-columns]::before {
+.grid[data-columns]::before {
   content: '3 .column.size-1of3'; }
 
 /* These are the classes that are going to be applied: */
