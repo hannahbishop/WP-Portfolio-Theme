@@ -1,12 +1,5 @@
 .project {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .project-thumbnail {
@@ -16,7 +9,14 @@
 }
 
 .project-info {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 2.5rem;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .project h3 {
