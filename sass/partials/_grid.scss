@@ -1,4 +1,4 @@
-.grid {
+#grid {
   margin: -$grid-border-width;
 }
 
@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-.grid[data-columns]::before {
+#grid[data-columns]::before {
 	content: '3 .column.size-1of3';
 }
 

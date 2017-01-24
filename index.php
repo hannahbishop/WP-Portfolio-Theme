@@ -7,7 +7,7 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-			<div class="grid" data-columns>
+			<div id="grid" data-columns>
 				<div class="grid-sizer"></div>
 				<?php $loop = new WP_Query(
 					array( 'post_type' => 'projects', 'posts_per_page' => -1 ) );
