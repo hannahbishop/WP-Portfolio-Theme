@@ -1,15 +1,15 @@
 $(function() {
 
   // init Masonry
-  var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    columnWidth: '.grid-sizer',
-    gutter: 10
-  });
-  // layout after each image loads
-  $grid.imagesLoaded().progress( function() {
-    $grid.masonry();
+  var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+    $grid.masonry({
+      itemSelector: '.grid-item',
+      // use element for option
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      gutter: 10
+    });
   });
 
   //Sticky header
