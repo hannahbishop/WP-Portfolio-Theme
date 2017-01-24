@@ -304,17 +304,10 @@ footer img {
 
 /* line 18, sass/partials/_project.scss */
 .project-info {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 2.5rem;
-  color: transparent;
-  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-/* line 29, sass/partials/_project.scss */
+/* line 22, sass/partials/_project.scss */
 .project h3 {
   color: transparent;
   font-family: "bebas-neue", Helvetica, sans-serif;
@@ -323,7 +316,7 @@ footer img {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 37, sass/partials/_project.scss */
+/* line 30, sass/partials/_project.scss */
 .project p {
   color: transparent;
   font-family: "lato", Helvetica, sans-serif;
@@ -334,26 +327,26 @@ footer img {
 }
 
 /*---Hover Styling---*/
-/* line 47, sass/partials/_project.scss */
+/* line 40, sass/partials/_project.scss */
 .project:hover .project-info {
   opacity: 1;
   background: rgba(0, 0, 0, 0.6);
   color: initial;
 }
 
-/* line 53, sass/partials/_project.scss */
+/* line 46, sass/partials/_project.scss */
 .project:hover .project-thumbnail {
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* line 57, sass/partials/_project.scss */
+/* line 50, sass/partials/_project.scss */
 .project:hover h3 {
   color: #ffffff;
 }
 
-/* line 61, sass/partials/_project.scss */
+/* line 54, sass/partials/_project.scss */
 .project:hover p {
   color: #e4e4e4;
 }
@@ -374,17 +367,6 @@ footer img {
   box-sizing: border-box;
 }
 
-/* line 15, sass/partials/_grid.scss */
-.grid-item {
-  height: 350px;
-}
-
-/*
-.grid-item:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}*/
 /* line 1, sass/partials/_project-single.scss */
 .project-single {
   width: 100%;
