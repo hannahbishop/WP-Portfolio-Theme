@@ -13,7 +13,7 @@ get_header(); ?>
 					array( 'post_type' => 'projects', 'posts_per_page' => -1 ) );
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="grid-item">
+					<div class="grid-item column size-1of3">
 						<?php get_template_part( 'content-project', get_post_format() );?>
 					</div>
 				<?php endwhile; wp_reset_query(); ?>
