@@ -7,8 +7,7 @@ $(function() {
       itemSelector: '.grid-item',
       // use element for option
       columnWidth: '.grid-sizer',
-      percentPosition: true,
-      gutter: 10
+      percentPosition: true
     });
   });
 

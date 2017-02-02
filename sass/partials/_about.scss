@@ -1,0 +1,101 @@
+.bio-img {
+  display: inline-block;
+  width: 50%;
+  background: lightblue;
+}
+
+.about {
+  padding: 5rem 0 0 2.5rem;
+  display: inline-block;
+  width: calc(50% - 4px); //accounting for inline-block extra pixels
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.about .title {
+    margin-bottom: 1.25rem;
+}
+
+.bio {
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.125rem;
+}
+
+.bullet-list {
+  margin-bottom: 2.5rem;
+}
+
+.bullet-pt {
+  padding-left: 2.5rem;
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+
+.bullet-pt p {
+  color: $secondary-font-color;
+  font-style: italic;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}
+
+.bullet-pt::before {
+  content: "";
+  height: 0.4rem;
+  width: 0.4rem;
+  border: 1px solid $colour-pop;
+  position: absolute;
+  left: 0;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  top: 0.7rem;
+}
+
+.resume-dwnld,
+.about-detail,
+.skill-label {
+  font-family: $secondary-font-stack;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+  color: $primary-font-color;
+}
+
+.skills {
+  margin: 2.5rem 0;
+}
+
+.skill-rating {
+  margin-bottom: 1.25rem;
+}
+
+.scale {
+  width: 100%;
+  background: lightgray;
+  height: 0.8rem;
+  position: relative;
+}
+
+.scale::before {
+    content: "";
+    display: block;
+    height: 0.8rem;
+    width: 50%;
+    background: $colour-pop;
+}
+
+.scale::after {
+    content: "";
+    height: 1.4rem;
+    width: 0.2rem;
+    background: #000000;
+    position: absolute;
+    right: 50%;
+    top: -0.3rem;
+}
+
+.about-detail {
+    float: left;
+    width: 30%;
+}

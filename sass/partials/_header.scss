@@ -9,21 +9,16 @@ mark {
 }
 
 .branding {
-  display: block;
+  display: inline-block;
 }
 
 .branding h1 {
   line-height: 3.8rem;
-  display: inline;
 }
 
-.header-links {
+.branding p {
   margin-bottom: 2rem;
   display: inline-block;
-}
-
-.header-links a {
-  display: block;
   font-family: $secondary-font-stack;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -31,10 +26,6 @@ mark {
   letter-spacing: 0.15rem;
   color: $secondary-font-color;
   transition: all 0.15s ease-in-out;
-}
-
-.header-links a:hover {
-  color: $primary-font-color;
 }
 
 .header-nav {
@@ -69,7 +60,7 @@ mark {
 .header-nav a::before {
   width: 2.5rem;
   content: '//';
-  color: orangered;
+  color: $colour-pop;
   font-size: 2.8rem;
   line-height: 100%;
   -webkit-transform: translateX(2.5rem);

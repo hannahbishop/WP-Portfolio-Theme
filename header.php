@@ -12,11 +12,14 @@
           <div class="branding">
             <a href="http://hannahbishop.com">
               <h1>Hannah Bishop</h1>
+              <p>Front end developer, UI/UX designer</p>
             </a>
           </div>
+          <!---
             <div class="header-links">
               <a href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
               <a href="#">Resume</a>
             </div>
+          --->
             <?php wp_nav_menu( array( 'theme_location' => 'primary' , 'container' => '' , 'menu_class' => 'header-nav') ); ?>
         </header>

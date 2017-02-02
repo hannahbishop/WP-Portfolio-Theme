@@ -4,10 +4,17 @@
 
 .grid-item,
 .grid-sizer {
-  width: 33.33%;
+  width: calc(33.33% - 1rem);
   position: relative;
   overflow: hidden;
   float: left;
+  margin-bottom: 1rem;
   border: $grid-border-width solid #ffffff;
   box-sizing: border-box;
+  @media screen and (max-width: 1200px) {
+    width: calc(50% - 1rem);
+  }
+  @media screen and (max-width: 720px) {
+    width: calc(100%);
+  }
 }

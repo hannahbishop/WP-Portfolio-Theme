@@ -91,7 +91,17 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-/* line 13, sass/partials/_typography.scss */
+/* line 10, sass/partials/_typography.scss */
+h2 {
+  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+}
+
+/* line 19, sass/partials/_typography.scss */
 h3 {
   font-family: "bebas-neue", Helvetica, sans-serif;
   font-size: 1.8rem;
@@ -101,7 +111,7 @@ h3 {
   letter-spacing: 0.15rem;
 }
 
-/* line 22, sass/partials/_typography.scss */
+/* line 28, sass/partials/_typography.scss */
 h4 {
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -111,11 +121,11 @@ h4 {
   letter-spacing: 0.25rem;
 }
 
-/* line 31, sass/partials/_typography.scss */
+/* line 37, sass/partials/_typography.scss */
 p {
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.4rem;
-  color: #767676;
+  color: #000000;
   letter-spacing: 0.01rem;
   line-height: 2rem;
 }
@@ -134,24 +144,18 @@ mark {
 
 /* line 11, sass/partials/_header.scss */
 .branding {
-  display: block;
+  display: inline-block;
 }
 
 /* line 15, sass/partials/_header.scss */
 .branding h1 {
   line-height: 3.8rem;
-  display: inline;
 }
 
-/* line 20, sass/partials/_header.scss */
-.header-links {
+/* line 19, sass/partials/_header.scss */
+.branding p {
   margin-bottom: 2rem;
   display: inline-block;
-}
-
-/* line 25, sass/partials/_header.scss */
-.header-links a {
-  display: block;
   font-family: "lato", Helvetica, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -161,17 +165,12 @@ mark {
   transition: all 0.15s ease-in-out;
 }
 
-/* line 36, sass/partials/_header.scss */
-.header-links a:hover {
-  color: #000000;
-}
-
-/* line 40, sass/partials/_header.scss */
+/* line 31, sass/partials/_header.scss */
 .header-nav {
   margin-left: -2.5rem;
 }
 
-/* line 45, sass/partials/_header.scss */
+/* line 36, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
@@ -179,13 +178,13 @@ mark {
   clear: both;
 }
 
-/* line 52, sass/partials/_header.scss */
+/* line 43, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
   margin-right: 2.5rem;
 }
 
-/* line 57, sass/partials/_header.scss */
+/* line 48, sass/partials/_header.scss */
 .header-nav a {
   position: relative;
   padding: 0 2.5rem;
@@ -198,7 +197,7 @@ mark {
   transition: color 0.2s ease-in-out;
 }
 
-/* line 69, sass/partials/_header.scss */
+/* line 60, sass/partials/_header.scss */
 .header-nav a::before {
   width: 2.5rem;
   content: '//';
@@ -215,17 +214,17 @@ mark {
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
 }
 
-/* line 85, sass/partials/_header.scss */
+/* line 76, sass/partials/_header.scss */
 .header-nav .current-menu-item a {
   color: #000000;
 }
 
-/* line 89, sass/partials/_header.scss */
+/* line 80, sass/partials/_header.scss */
 .header-nav a:hover {
   color: #000000;
 }
 
-/* line 93, sass/partials/_header.scss */
+/* line 84, sass/partials/_header.scss */
 .header-nav a:hover::before, .header-nav .current-menu-item a::before {
   opacity: 1;
   transform: translateX(0);
@@ -359,12 +358,27 @@ footer img {
 /* line 5, sass/partials/_grid.scss */
 .grid-item,
 .grid-sizer {
-  width: 33.33%;
+  width: calc(33.33% - 1rem);
   position: relative;
   overflow: hidden;
   float: left;
+  margin-bottom: 1rem;
   border: 0rem solid #ffffff;
   box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  /* line 5, sass/partials/_grid.scss */
+  .grid-item,
+  .grid-sizer {
+    width: calc(50% - 1rem);
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 5, sass/partials/_grid.scss */
+  .grid-item,
+  .grid-sizer {
+    width: calc(100%);
+  }
 }
 
 /* line 1, sass/partials/_project-single.scss */
@@ -418,4 +432,121 @@ footer img {
 /* line 42, sass/partials/_project-single.scss */
 .project-details-sctn {
   margin-bottom: 2.5rem;
+}
+
+/* line 1, sass/partials/_about.scss */
+.bio-img {
+  display: inline-block;
+  width: 50%;
+  background: lightblue;
+}
+
+/* line 7, sass/partials/_about.scss */
+.about {
+  padding: 5rem 0 0 2.5rem;
+  display: inline-block;
+  width: calc(50% - 4px);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* line 15, sass/partials/_about.scss */
+.about .title {
+  margin-bottom: 1.25rem;
+}
+
+/* line 19, sass/partials/_about.scss */
+.bio {
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.125rem;
+}
+
+/* line 25, sass/partials/_about.scss */
+.bullet-list {
+  margin-bottom: 2.5rem;
+}
+
+/* line 29, sass/partials/_about.scss */
+.bullet-pt {
+  padding-left: 2.5rem;
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+
+/* line 35, sass/partials/_about.scss */
+.bullet-pt p {
+  color: #767676;
+  font-style: italic;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}
+
+/* line 42, sass/partials/_about.scss */
+.bullet-pt::before {
+  content: "";
+  height: 0.4rem;
+  width: 0.4rem;
+  border: 1px solid orangered;
+  position: absolute;
+  left: 0;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  top: 0.7rem;
+}
+
+/* line 54, sass/partials/_about.scss */
+.resume-dwnld,
+.about-detail,
+.skill-label {
+  font-family: "lato", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+  color: #000000;
+}
+
+/* line 65, sass/partials/_about.scss */
+.skills {
+  margin: 2.5rem 0;
+}
+
+/* line 69, sass/partials/_about.scss */
+.skill-rating {
+  margin-bottom: 1.25rem;
+}
+
+/* line 73, sass/partials/_about.scss */
+.scale {
+  width: 100%;
+  background: lightgray;
+  height: 0.8rem;
+  position: relative;
+}
+
+/* line 80, sass/partials/_about.scss */
+.scale::before {
+  content: "";
+  display: block;
+  height: 0.8rem;
+  width: 50%;
+  background: orangered;
+}
+
+/* line 88, sass/partials/_about.scss */
+.scale::after {
+  content: "";
+  height: 1.4rem;
+  width: 0.2rem;
+  background: #000000;
+  position: absolute;
+  right: 50%;
+  top: -0.3rem;
+}
+
+/* line 98, sass/partials/_about.scss */
+.about-detail {
+  float: left;
+  width: 30%;
 }
