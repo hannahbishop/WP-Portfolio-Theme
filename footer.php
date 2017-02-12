@@ -1,5 +1,6 @@
-        <!---
+
         <footer>
+          <!---
             <section class="footer-nav">
                 <p class="footer-ctg">Hannah Bishop</p>
                   <ul>
@@ -14,7 +15,7 @@
                 <ul>
                     <li><a class="footer-link" href="tel:1-250-889-4187">(250) 889 4187</a></li>
                     <li><a class="footer-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a></li>
-                    <li><a class="footer-link" href="https://github.com/hannahbishop"><img src="<?php bloginfo('template_directory');?>/assets/img/GitHub-Mark-32px.png" alt="GitHub Mark"></a></li>
+                    <li><a class="footer-link" href="https://github.com/hannahbishop"><img src="<?php //bloginfo('template_directory');?>/assets/img/GitHub-Mark-32px.png" alt="GitHub Mark"></a></li>
                 </ul>
             </section>-->
         </footer>-->

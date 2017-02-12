@@ -1,0 +1,41 @@
+//TO-DO: remove this
+.site-main {
+  background: gray;
+}
+
+.landing-page {
+  height: 100%;
+  text-align: center;
+}
+
+.landing-page h1 {
+  margin-bottom: 5rem;
+}
+
+.intro-txt {
+  margin-bottom: 7.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #FFFFFF;
+  color: $secondary-font-color;
+  font-family: $primary-font-stack;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 5rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-secondary {
+  display: block;
+  font-family: $secondary-font-stack;
+  text-decoration: underline;
+  color: $primary-font-color;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+}

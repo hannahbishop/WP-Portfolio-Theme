@@ -5,22 +5,20 @@
 /*Edited slightly to fit my project's needs*/
 /* line 7, sass/partials/_reset.scss */
 html {
-  font-size: 0.625em;
-}
+  height: 100%;
+  font-size: 0.625em; }
 
-/* line 10, sass/partials/_reset.scss */
+/* line 11, sass/partials/_reset.scss */
 body {
-  position: relative;
-}
+  height: 100%;
+  position: relative; }
 
-/* line 13, sass/partials/_reset.scss */
-main {
-  width: 100%;
-  padding: 0 5rem;
-  box-sizing: border-box;
-}
+/* line 15, sass/partials/_reset.scss */
+.site-main {
+  height: 100%;
+  width: 100%; }
 
-/* line 18, sass/partials/_reset.scss */
+/* line 19, sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -37,165 +35,117 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 36, sass/partials/_reset.scss */
+/* line 37, sass/partials/_reset.scss */
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
-/* line 40, sass/partials/_reset.scss */
+/* line 41, sass/partials/_reset.scss */
 mark {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 44, sass/partials/_reset.scss */
+/* line 45, sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 48, sass/partials/_reset.scss */
+/* line 49, sass/partials/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 51, sass/partials/_reset.scss */
+/* line 52, sass/partials/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 54, sass/partials/_reset.scss */
+/* line 55, sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 59, sass/partials/_reset.scss */
+/* line 60, sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* line 1, sass/partials/_typography.scss */
 h1 {
-  font-family: "bebas-neue", Helvetica, sans-serif;
-  font-size: 4.8rem;
-  color: #000000;
+  font-family: "filson-pro", Helvetica, sans-serif;
+  font-size: 7.2rem;
+  color: #FFFFFF;
+  letter-spacing: 0.05rem;
+  line-height: 6rem;
   text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.1rem;
-}
+  font-weight: 900; }
 
-/* line 10, sass/partials/_typography.scss */
-h2 {
-  font-family: "bebas-neue", Helvetica, sans-serif;
-  font-size: 3rem;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.1rem;
-}
-
-/* line 19, sass/partials/_typography.scss */
-h3 {
-  font-family: "bebas-neue", Helvetica, sans-serif;
-  font-size: 1.8rem;
-  color: #767676;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.15rem;
-}
-
-/* line 28, sass/partials/_typography.scss */
-h4 {
-  font-family: "lato", Helvetica, sans-serif;
-  font-size: 1.4rem;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.25rem;
-}
-
-/* line 37, sass/partials/_typography.scss */
+/* line 11, sass/partials/_typography.scss */
 p {
-  font-family: "lato", Helvetica, sans-serif;
-  font-size: 1.4rem;
-  color: #000000;
-  letter-spacing: 0.01rem;
-  line-height: 2rem;
-}
+  font-family: "chaparral-pro", serif;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  letter-spacing: 0.1rem;
+  line-height: 3.6rem; }
 
 /* line 1, sass/partials/_header.scss */
 .site-header {
   padding: 2.5rem 2.5rem 1rem 2.5rem;
   background: #ffffff;
-  z-index: 1;
-}
+  z-index: 1; }
 
 /* line 7, sass/partials/_header.scss */
 mark {
-  margin: 0 1rem;
-}
+  margin: 0 1rem; }
 
 /* line 11, sass/partials/_header.scss */
 .branding {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* line 15, sass/partials/_header.scss */
 .branding h1 {
-  line-height: 3.8rem;
-}
+  line-height: 3.8rem; }
 
 /* line 19, sass/partials/_header.scss */
 .branding p {
   margin-bottom: 2rem;
   display: inline-block;
-  font-family: "lato", Helvetica, sans-serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  color: #767676;
-  transition: all 0.15s ease-in-out;
-}
+  color: #000000;
+  transition: all 0.15s ease-in-out; }
 
 /* line 31, sass/partials/_header.scss */
 .header-nav {
-  margin-left: -2.5rem;
-}
+  margin-left: -2.5rem; }
 
 /* line 36, sass/partials/_header.scss */
 .header-nav::after {
   content: " ";
   display: block;
   height: 0;
-  clear: both;
-}
+  clear: both; }
 
 /* line 43, sass/partials/_header.scss */
 .header-nav .menu-item {
   float: left;
-  margin-right: 2.5rem;
-}
+  margin-right: 2.5rem; }
 
 /* line 48, sass/partials/_header.scss */
 .header-nav a {
   position: relative;
   padding: 0 2.5rem;
   display: inline-block;
-  font-family: "bebas-neue", Helvetica, sans-serif;
-  color: #767676;
+  font-family: "filson-pro", Helvetica, sans-serif;
+  color: #000000;
   font-size: 2.2rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  transition: color 0.2s ease-in-out;
-}
+  transition: color 0.2s ease-in-out; }
 
 /* line 60, sass/partials/_header.scss */
 .header-nav a::before {
@@ -211,88 +161,74 @@ mark {
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
   transition: transform 0.3s, opacity 0.2s;
   opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-}
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s; }
 
 /* line 76, sass/partials/_header.scss */
 .header-nav .current-menu-item a {
-  color: #000000;
-}
+  color: #000000; }
 
 /* line 80, sass/partials/_header.scss */
 .header-nav a:hover {
-  color: #000000;
-}
+  color: #FFFFFF; }
 
 /* line 84, sass/partials/_header.scss */
 .header-nav a:hover::before, .header-nav .current-menu-item a::before {
   opacity: 1;
-  transform: translateX(0);
-}
+  transform: translateX(0); }
 
 /* line 1, sass/partials/_footer.scss */
 footer {
   padding: 6rem 2.5rem 2.5rem;
-  clear: both;
-}
+  clear: both; }
 
 /* line 6, sass/partials/_footer.scss */
 .footer-nav {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* line 10, sass/partials/_footer.scss */
 .footer-contact {
   display: inline-block;
   float: right;
-  text-align: right;
-}
+  text-align: right; }
 
 /* line 16, sass/partials/_footer.scss */
 .footer-ctg {
-  font-family: "lato", Helvetica, sans-serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.2rem;
-  color: #000000;
+  color: #FFFFFF;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
-}
+  letter-spacing: 0.05rem; }
 
 /* line 24, sass/partials/_footer.scss */
 footer li {
-  margin: 0.2rem 0;
-}
+  margin: 0.2rem 0; }
 
 /* line 28, sass/partials/_footer.scss */
 footer a {
-  font-family: "lato", Helvetica, sans-serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.2rem;
-  color: #767676;
+  color: #000000;
   letter-spacing: 0.05rem;
-  transition: all 0.15s ease-in-out;
-}
+  transition: all 0.15s ease-in-out; }
 
 /* line 36, sass/partials/_footer.scss */
 footer a:hover {
-  color: #000000;
-}
+  color: #FFFFFF; }
 
 /* line 40, sass/partials/_footer.scss */
 footer img {
   width: 1.6rem;
-  height: 1.6rem;
-}
+  height: 1.6rem; }
 
 /* line 1, sass/partials/_project.scss */
 .project {
-  position: relative;
-}
+  position: relative; }
 
 /* line 5, sass/partials/_project.scss */
 .project-thumbnail {
   width: 100%;
   display: block;
-  transition: all 0.6s ease;
-}
+  transition: all 0.6s ease; }
 
 /* line 11, sass/partials/_project.scss */
 .project-info {
@@ -303,57 +239,49 @@ footer img {
   left: 0;
   padding: 2.5rem;
   color: transparent;
-  transition: all 0.3s ease-in-out;
-}
+  transition: all 0.3s ease-in-out; }
 
 /* line 22, sass/partials/_project.scss */
 .project h3 {
   color: transparent;
-  font-family: "bebas-neue", Helvetica, sans-serif;
+  font-family: "filson-pro", Helvetica, sans-serif;
   font-size: 2.4rem;
   letter-spacing: 0.1rem;
-  transition: all 0.3s ease-in-out;
-}
+  transition: all 0.3s ease-in-out; }
 
 /* line 30, sass/partials/_project.scss */
 .project p {
   color: transparent;
-  font-family: "lato", Helvetica, sans-serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 0.1rem;
-  transition: all 0.3s ease-in-out;
-}
+  transition: all 0.3s ease-in-out; }
 
 /*---Hover Styling---*/
 /* line 40, sass/partials/_project.scss */
 .project:hover .project-info {
   opacity: 1;
   background: rgba(0, 0, 0, 0.6);
-  color: initial;
-}
+  color: initial; }
 
 /* line 46, sass/partials/_project.scss */
 .project:hover .project-thumbnail {
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 /* line 50, sass/partials/_project.scss */
 .project:hover h3 {
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 /* line 54, sass/partials/_project.scss */
 .project:hover p {
-  color: #e4e4e4;
-}
+  color: #e4e4e4; }
 
 /* line 1, sass/partials/_grid.scss */
 .grid {
-  margin: 0rem;
-}
+  margin: 0rem; }
 
 /* line 5, sass/partials/_grid.scss */
 .grid-item,
@@ -364,41 +292,33 @@ footer img {
   float: left;
   margin-bottom: 1rem;
   border: 0rem solid #ffffff;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 1200px) {
-  /* line 5, sass/partials/_grid.scss */
-  .grid-item,
-  .grid-sizer {
-    width: calc(50% - 1rem);
-  }
-}
-@media screen and (max-width: 720px) {
-  /* line 5, sass/partials/_grid.scss */
-  .grid-item,
-  .grid-sizer {
-    width: calc(100%);
-  }
-}
+  box-sizing: border-box; }
+  @media screen and (max-width: 1200px) {
+    /* line 5, sass/partials/_grid.scss */
+    .grid-item,
+    .grid-sizer {
+      width: calc(50% - 1rem); } }
+  @media screen and (max-width: 720px) {
+    /* line 5, sass/partials/_grid.scss */
+    .grid-item,
+    .grid-sizer {
+      width: calc(100%); } }
 
 /* line 1, sass/partials/_project-single.scss */
 .project-single {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 /* line 6, sass/partials/_project-single.scss */
 .project-imgs {
   width: 50%;
-  float: left;
-}
+  float: left; }
 
 /* line 11, sass/partials/_project-single.scss */
 .project-imgs img {
   width: 100%;
   height: auto;
-  display: block;
-}
+  display: block; }
 
 /* line 17, sass/partials/_project-single.scss */
 .project-details {
@@ -406,40 +326,34 @@ footer img {
   display: inline-block;
   padding: 0 2.5rem;
   text-align: left;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* line 25, sass/partials/_project-single.scss */
 .project-single h3 {
   font-size: 2.4rem;
-  color: #000000;
-}
+  color: #FFFFFF; }
 
 /* line 30, sass/partials/_project-single.scss */
 .project-single .file-link {
   text-transform: lowercase;
   font-size: 1.6rem;
   line-height: 2rem;
-  font-family: "lato", Helvetica, sans-serif;
-  font-style: italic;
-}
+  font-family: "chaparral-pro", serif;
+  font-style: italic; }
 
 /* line 38, sass/partials/_project-single.scss */
 .project-details-header {
-  margin-bottom: 5rem;
-}
+  margin-bottom: 5rem; }
 
 /* line 42, sass/partials/_project-single.scss */
 .project-details-sctn {
-  margin-bottom: 2.5rem;
-}
+  margin-bottom: 2.5rem; }
 
 /* line 1, sass/partials/_about.scss */
 .bio-img {
   display: inline-block;
   width: 50%;
-  background: lightblue;
-}
+  background: lightblue; }
 
 /* line 7, sass/partials/_about.scss */
 .about {
@@ -447,40 +361,34 @@ footer img {
   display: inline-block;
   width: calc(50% - 4px);
   box-sizing: border-box;
-  text-align: left;
-}
+  text-align: left; }
 
 /* line 15, sass/partials/_about.scss */
 .about .title {
-  margin-bottom: 1.25rem;
-}
+  margin-bottom: 1.25rem; }
 
 /* line 19, sass/partials/_about.scss */
 .bio {
   margin-bottom: 1.25rem;
   font-size: 1.3rem;
-  letter-spacing: 0.125rem;
-}
+  letter-spacing: 0.125rem; }
 
 /* line 25, sass/partials/_about.scss */
 .bullet-list {
-  margin-bottom: 2.5rem;
-}
+  margin-bottom: 2.5rem; }
 
 /* line 29, sass/partials/_about.scss */
 .bullet-pt {
   padding-left: 2.5rem;
   position: relative;
-  margin-bottom: 0.625rem;
-}
+  margin-bottom: 0.625rem; }
 
 /* line 35, sass/partials/_about.scss */
 .bullet-pt p {
-  color: #767676;
+  color: #000000;
   font-style: italic;
   font-size: 1.3rem;
-  letter-spacing: 0.15rem;
-}
+  letter-spacing: 0.15rem; }
 
 /* line 42, sass/partials/_about.scss */
 .bullet-pt::before {
@@ -492,38 +400,33 @@ footer img {
   left: 0;
   vertical-align: middle;
   border-radius: 0.3rem;
-  top: 0.7rem;
-}
+  top: 0.7rem; }
 
 /* line 54, sass/partials/_about.scss */
 .resume-dwnld,
 .about-detail,
 .skill-label {
-  font-family: "lato", Helvetica, sans-serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  color: #000000;
-}
+  color: #FFFFFF; }
 
 /* line 65, sass/partials/_about.scss */
 .skills {
-  margin: 2.5rem 0;
-}
+  margin: 2.5rem 0; }
 
 /* line 69, sass/partials/_about.scss */
 .skill-rating {
-  margin-bottom: 1.25rem;
-}
+  margin-bottom: 1.25rem; }
 
 /* line 73, sass/partials/_about.scss */
 .scale {
   width: 100%;
   background: lightgray;
   height: 0.8rem;
-  position: relative;
-}
+  position: relative; }
 
 /* line 80, sass/partials/_about.scss */
 .scale::before {
@@ -531,8 +434,7 @@ footer img {
   display: block;
   height: 0.8rem;
   width: 50%;
-  background: orangered;
-}
+  background: orangered; }
 
 /* line 88, sass/partials/_about.scss */
 .scale::after {
@@ -542,11 +444,50 @@ footer img {
   background: #000000;
   position: absolute;
   right: 50%;
-  top: -0.3rem;
-}
+  top: -0.3rem; }
 
 /* line 98, sass/partials/_about.scss */
 .about-detail {
   float: left;
-  width: 30%;
-}
+  width: 30%; }
+
+/* line 2, sass/partials/_landing.scss */
+.site-main {
+  background: gray; }
+
+/* line 6, sass/partials/_landing.scss */
+.landing-page {
+  height: 100%;
+  text-align: center; }
+
+/* line 11, sass/partials/_landing.scss */
+.landing-page h1 {
+  margin-bottom: 5rem; }
+
+/* line 15, sass/partials/_landing.scss */
+.intro-txt {
+  margin-bottom: 7.5rem; }
+
+/* line 19, sass/partials/_landing.scss */
+.cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: "filson-pro", Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 5rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem; }
+
+/* line 33, sass/partials/_landing.scss */
+.cta-secondary {
+  display: block;
+  font-family: "chaparral-pro", serif;
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 0.25rem; }
