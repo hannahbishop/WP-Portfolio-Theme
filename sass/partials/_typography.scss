@@ -24,6 +24,9 @@ p {
   font-style: italic;
   font-size: 1.5rem;
   letter-spacing: 0.25rem;
-  text-decoration: underline;
   transition: all 0.15s ease-in-out;
+}
+
+.txt-link:hover {
+  text-decoration: underline;
 }

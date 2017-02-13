@@ -8,10 +8,10 @@
 
 	function script_init() {
 		if (!is_admin()) {
-			wp_enqueue_script( 'js_check', get_template_directory_uri() . '/js/js_check.js');
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, '3.1.1', true);
-			wp_enqueue_script( 'jquery' );
+			//wp_enqueue_script( 'js_check', get_template_directory_uri() . '/js/js_check.js');
+			//wp_deregister_script('jquery');
+			//wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, '3.1.1', true);
+			//wp_enqueue_script( 'jquery' );
 			/*
 			// comment out the next two lines to load the local copy of jQuery
 			wp_deregister_script('jquery');
@@ -25,7 +25,7 @@
 			*/
 		}
 	}
-	add_action('init', 'script_init');
+	//add_action('init', 'script_init');
 
 	//enqueue typescript fonts
 	function portfolio_typekit() {
