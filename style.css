@@ -52,7 +52,7 @@ q:before, q:after {
 /* line 1, sass/partials/_typography.scss */
 h1 {
   font-family: "filson-pro", Helvetica, sans-serif;
-  font-size: 7.2rem;
+  font-size: 5rem;
   color: #FFFFFF;
   letter-spacing: 0.05rem;
   line-height: 6rem;
@@ -62,10 +62,22 @@ h1 {
 /* line 11, sass/partials/_typography.scss */
 p {
   font-family: "chaparral-pro", serif;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #FFFFFF;
   letter-spacing: 0.1rem;
-  line-height: 3.6rem; }
+  font-weight: 100; }
+
+/* line 19, sass/partials/_typography.scss */
+.txt-link {
+  font-family: "chaparral-pro", serif;
+  color: #FFFFFF;
+  line-height: 3.6rem;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  text-decoration: underline;
+  transition: all 0.15s ease-in-out; }
 
 /* line 1, sass/partials/_header.scss */
 .site-header {
@@ -436,71 +448,127 @@ footer img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 100%; }
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
-/* line 10, sass/partials/_landing.scss */
+/* line 12, sass/partials/_landing.scss */
 .hero {
   margin: auto;
-  padding: 5rem 0;
+  padding: 2rem 0;
   text-align: center; }
 
-/* line 16, sass/partials/_landing.scss */
+/* line 18, sass/partials/_landing.scss */
 .hero h1 {
-  margin-bottom: 5rem; }
+  margin-bottom: 2rem; }
+  @media screen and (max-width: 720px) {
+    /* line 18, sass/partials/_landing.scss */
+    .hero h1 {
+      margin-bottom: 1rem;
+      font-size: 3.5rem; } }
 
-/* line 20, sass/partials/_landing.scss */
+/* line 26, sass/partials/_landing.scss */
 .intro-txt {
-  margin-bottom: 7.5rem; }
+  margin-bottom: 5.5rem; }
+  @media screen and (max-width: 720px) {
+    /* line 26, sass/partials/_landing.scss */
+    .intro-txt {
+      margin-bottom: 4.5rem; } }
 
-/* line 24, sass/partials/_landing.scss */
+/* line 33, sass/partials/_landing.scss */
+.intro-txt p {
+  line-height: 3.6rem; }
+  @media screen and (max-width: 720px) {
+    /* line 33, sass/partials/_landing.scss */
+    .intro-txt p {
+      line-height: 3rem; } }
+
+/* line 40, sass/partials/_landing.scss */
 .cta {
-  display: inline-block;
+  display: inline-block; }
+
+/* line 44, sass/partials/_landing.scss */
+.cta-btn {
+  display: block;
   margin: 0 auto;
   margin-bottom: 1.5rem;
   padding: 1rem 2.5rem;
-  background: #FFFFFF;
   color: #000000;
   font-family: "filson-pro", Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  background: #FFFFFF;
   border-radius: 5rem;
-  letter-spacing: 0.5rem; }
+  overflow: hidden; }
+  @media screen and (max-width: 720px) {
+    /* line 44, sass/partials/_landing.scss */
+    .cta-btn {
+      padding: 0.75rem 2rem; } }
 
-/* line 39, sass/partials/_landing.scss */
-.cta-secondary {
-  display: block;
-  font-family: "chaparral-pro", serif;
-  text-decoration: underline;
-  color: #FFFFFF;
-  font-style: italic;
-  font-size: 2rem;
-  letter-spacing: 0.25rem; }
+/* line 63, sass/partials/_landing.scss */
+.cta-btn span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.15s; }
+
+/* line 71, sass/partials/_landing.scss */
+.cta-btn span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+  padding-top: 4rem; }
+
+/* line 82, sass/partials/_landing.scss */
+.cta-btn:hover span {
+  -webkit-transform: translateY(-6rem);
+  -moz-transform: translateY(-6rem);
+  transform: translateY(-6rem); }
+
+/* line 88, sass/partials/_landing.scss */
+.landing-page .txt-link {
+  display: block; }
 
 /***Contact***/
-/* line 50, sass/partials/_landing.scss */
+/* line 93, sass/partials/_landing.scss */
 .contact {
   align-self: flex-end;
-  margin-bottom: 2rem;
-  margin-right: 2rem; }
+  margin-bottom: 1rem;
+  margin-right: 1rem; }
 
-/* line 56, sass/partials/_landing.scss */
+/* line 99, sass/partials/_landing.scss */
+.icon-list {
+  text-align: right; }
+
+/* line 103, sass/partials/_landing.scss */
 .contact li {
   display: inline-block; }
 
-/* line 60, sass/partials/_landing.scss */
-.contact-link {
+/* line 107, sass/partials/_landing.scss */
+.link-icon {
   margin: 0 0.75rem; }
 
+/* line 111, sass/partials/_landing.scss */
+.letter-head {
+  height: 5rem; }
+
 /***SVG***/
-/* line 65, sass/partials/_landing.scss */
-.contact-link svg {
+/* line 116, sass/partials/_landing.scss */
+.link-icon svg {
   height: 2.9rem; }
 
-/* line 69, sass/partials/_landing.scss */
+/* line 120, sass/partials/_landing.scss */
 .contact-icon {
-  fill: #FFFFFF; }
+  fill: #FFFFFF;
+  transition: all 0.1s ease-in-out; }
 
-/* line 73, sass/partials/_landing.scss */
-.contact-link:hover .contact-icon {
+/* line 125, sass/partials/_landing.scss */
+.link-icon:hover .contact-icon {
   fill: #000000; }

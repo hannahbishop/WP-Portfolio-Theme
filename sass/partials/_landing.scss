@@ -5,71 +5,123 @@
   flex-direction: column;
   min-height: 100%;
   width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .hero {
   margin: auto;
-  padding: 5rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
 .hero h1 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  @media screen and (max-width: $break-medium) {
+   margin-bottom: 1rem;
+   font-size: 3.5rem;
+  }
 }
 
 .intro-txt {
-  margin-bottom: 7.5rem;
+  margin-bottom: 5.5rem;
+  @media screen and (max-width: $break-medium) {
+   margin-bottom: 4.5rem;
+ }
+}
+
+.intro-txt p {
+  line-height: 3.6rem;
+  @media screen and (max-width: $break-medium) {
+    line-height: 3rem;
+  }
 }
 
 .cta {
   display: inline-block;
+}
+
+.cta-btn {
+  display: block;
   margin: 0 auto;
   margin-bottom: 1.5rem;
   padding: 1rem 2.5rem;
-  background: #FFFFFF;
   color: $secondary-font-color;
   font-family: $primary-font-stack;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  background: #FFFFFF;
   border-radius: 5rem;
-  letter-spacing: 0.5rem;
+  overflow: hidden;
+  @media screen and (max-width: $break-medium) {
+   padding: 0.75rem 2rem;
+ }
 }
 
-.cta-secondary {
+.cta-btn span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.15s;
+}
+
+.cta-btn span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  transform: translate(0,0);
+  padding-top: 4rem;
+}
+
+.cta-btn:hover span {
+  -webkit-transform: translateY(-6rem);
+  -moz-transform: translateY(-6rem);
+  transform: translateY(-6rem);
+}
+
+.landing-page .txt-link {
   display: block;
-  font-family: $secondary-font-stack;
-  text-decoration: underline;
-  color: $primary-font-color;
-  font-style: italic;
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
 }
 
 /***Contact***/
 .contact {
   align-self: flex-end;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.icon-list {
+  text-align: right;
 }
 
 .contact li {
   display: inline-block;
 }
 
-.contact-link {
+.link-icon {
   margin: 0 0.75rem; //minimum allowed by Instagram brand guildelines
 }
 
+.letter-head {
+  height: 5rem;
+}
+
 /***SVG***/
-.contact-link svg {
+.link-icon svg {
   height: 2.9rem; //minimum allowed by Instagram brand guidelines
 }
 
 .contact-icon {
   fill: $primary-font-color;
+  transition: all 0.1s ease-in-out;
 }
 
-.contact-link:hover .contact-icon {
+.link-icon:hover .contact-icon {
   fill: $secondary-font-color;
 }
