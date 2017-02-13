@@ -1,31 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/*Edited slightly to fit my project's needs*/
-/* line 7, sass/partials/_reset.scss */
+/* line 1, sass/partials/_reset.scss */
 html {
-  height: 100%;
   font-size: 0.625em; }
 
-/* line 11, sass/partials/_reset.scss */
-body {
-  height: 100%;
-  position: relative; }
-
-/* line 15, sass/partials/_reset.scss */
-.site-main {
-  height: 100%;
-  width: 100%; }
-
-/* line 19, sass/partials/_reset.scss */
-html, body, div, span, applet, object, iframe,
+/* line 4, sass/partials/_reset.scss */
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+b, u, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -37,39 +20,34 @@ time, mark, audio, video {
   border: 0;
   vertical-align: baseline; }
 
-/* line 37, sass/partials/_reset.scss */
+/* line 21, sass/partials/_reset.scss */
 a {
   text-decoration: none;
   color: inherit; }
 
-/* line 41, sass/partials/_reset.scss */
+/* line 25, sass/partials/_reset.scss */
 mark {
   background-color: transparent; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 45, sass/partials/_reset.scss */
+/* line 29, sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 49, sass/partials/_reset.scss */
+/* line 33, sass/partials/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 52, sass/partials/_reset.scss */
+/* line 36, sass/partials/_reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 55, sass/partials/_reset.scss */
+/* line 39, sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
-
-/* line 60, sass/partials/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
 
 /* line 1, sass/partials/_typography.scss */
 h1 {
@@ -451,26 +429,34 @@ footer img {
   float: left;
   width: 30%; }
 
-/* line 2, sass/partials/_landing.scss */
-.site-main {
-  background: gray; }
-
-/* line 6, sass/partials/_landing.scss */
+/* line 1, sass/partials/_landing.scss */
 .landing-page {
-  height: 100%;
+  position: absolute;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%; }
+
+/* line 10, sass/partials/_landing.scss */
+.hero {
+  margin: auto;
+  padding: 5rem 0;
   text-align: center; }
 
-/* line 11, sass/partials/_landing.scss */
-.landing-page h1 {
+/* line 16, sass/partials/_landing.scss */
+.hero h1 {
   margin-bottom: 5rem; }
 
-/* line 15, sass/partials/_landing.scss */
+/* line 20, sass/partials/_landing.scss */
 .intro-txt {
   margin-bottom: 7.5rem; }
 
-/* line 19, sass/partials/_landing.scss */
+/* line 24, sass/partials/_landing.scss */
 .cta {
   display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
   padding: 1rem 2.5rem;
   background: #FFFFFF;
   color: #000000;
@@ -479,10 +465,9 @@ footer img {
   text-transform: uppercase;
   font-size: 2rem;
   border-radius: 5rem;
-  letter-spacing: 0.5rem;
-  margin-bottom: 1.5rem; }
+  letter-spacing: 0.5rem; }
 
-/* line 33, sass/partials/_landing.scss */
+/* line 39, sass/partials/_landing.scss */
 .cta-secondary {
   display: block;
   font-family: "chaparral-pro", serif;
@@ -491,3 +476,31 @@ footer img {
   font-style: italic;
   font-size: 2rem;
   letter-spacing: 0.25rem; }
+
+/***Contact***/
+/* line 50, sass/partials/_landing.scss */
+.contact {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  margin-right: 2rem; }
+
+/* line 56, sass/partials/_landing.scss */
+.contact li {
+  display: inline-block; }
+
+/* line 60, sass/partials/_landing.scss */
+.contact-link {
+  margin: 0 0.75rem; }
+
+/***SVG***/
+/* line 65, sass/partials/_landing.scss */
+.contact-link svg {
+  height: 2.9rem; }
+
+/* line 69, sass/partials/_landing.scss */
+.contact-icon {
+  fill: #FFFFFF; }
+
+/* line 73, sass/partials/_landing.scss */
+.contact-link:hover .contact-icon {
+  fill: #000000; }
