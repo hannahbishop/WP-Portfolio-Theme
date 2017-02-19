@@ -16,18 +16,18 @@ get_header(); ?>
 	          <li><p>Cat owner.</p></li>
 	        </ul>
 					<div class="cta">
-	        	<a class="cta-btn" href="mailto:hbishop@uvic.ca">
+	        	<a class="cta-btn" href="mailto:hbishop@uvic.ca" target="_blank">
 							<span class="cta-btn-txt" data-hover="Email me">Email me</span>
 						</a>
-	        	<a class="txt-link" href="http://hannahbishop.com/wp-content/uploads/resume.pdf">view resume</a>
+	        	<a class="txt-link" href="http://hannahbishop.com/wp-content/uploads/resume.pdf" target="_blank">view resume</a>
 					</div>
 				</div>
 	      <div class="contact">
 	        <ul class="icon-list">
-	          <li><a class="link-icon" href="https://github.com/hannahbishop" title="GitHub">
+	          <li><a class="link-icon" href="https://github.com/hannahbishop" title="GitHub" target="_blank">
 							<?php get_template_part( 'assets/svg/icon', 'github.svg' );?>
 						</a></li>
-	          <li><a class="link-icon" href="https://www.instagram.com/littlehannahbee/" title="Instagram">
+	          <li><a class="link-icon" href="https://www.instagram.com/littlehannahbee/" title="Instagram" target="_blank">
 							<?php get_template_part( 'assets/svg/icon', 'instagram.svg' );?>
 						</a></li>
 	          </ul>
