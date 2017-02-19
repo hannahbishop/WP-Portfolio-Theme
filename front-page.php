@@ -31,7 +31,7 @@ get_header(); ?>
 							<?php get_template_part( 'assets/svg/icon', 'instagram.svg' );?>
 						</a></li>
 	          </ul>
-						<a class="txt-link" href="mailto:hbishop@uvic.ca">hbishop@uvic.ca</a>
+						<a class="txt-link" href="mailto:hbishop@uvic.ca" target="_blank">hbishop@uvic.ca</a>
         </div>
       </div>
 		</main>
