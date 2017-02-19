@@ -94,8 +94,10 @@
 /***Contact***/
 .contact {
   align-self: flex-end;
+  -webkit-align-self: flex-end;
   margin-bottom: 1rem;
   margin-right: 1rem;
+  text-align: right;
 }
 
 .icon-list {

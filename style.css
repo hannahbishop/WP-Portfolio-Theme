@@ -545,35 +545,37 @@ footer img {
 /* line 95, sass/partials/_landing.scss */
 .contact {
   align-self: flex-end;
+  -webkit-align-self: flex-end;
   margin-bottom: 1rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  text-align: right; }
 
-/* line 101, sass/partials/_landing.scss */
+/* line 103, sass/partials/_landing.scss */
 .icon-list {
   text-align: right; }
 
-/* line 105, sass/partials/_landing.scss */
+/* line 107, sass/partials/_landing.scss */
 .contact li {
   display: inline-block; }
 
-/* line 109, sass/partials/_landing.scss */
+/* line 111, sass/partials/_landing.scss */
 .link-icon {
   margin: 0 0.75rem; }
 
-/* line 113, sass/partials/_landing.scss */
+/* line 115, sass/partials/_landing.scss */
 .letter-head {
   height: 5rem; }
 
 /***SVG***/
-/* line 118, sass/partials/_landing.scss */
+/* line 120, sass/partials/_landing.scss */
 .link-icon svg {
   height: 2.9rem; }
 
-/* line 122, sass/partials/_landing.scss */
+/* line 124, sass/partials/_landing.scss */
 .contact-icon {
   fill: #FFFFFF;
   transition: all 0.1s ease-in-out; }
 
-/* line 127, sass/partials/_landing.scss */
+/* line 129, sass/partials/_landing.scss */
 .link-icon:hover .contact-icon {
   fill: #000000; }
