@@ -19,7 +19,7 @@ get_header(); ?>
 	        	<a class="cta-btn" href="mailto:hbishop@uvic.ca">
 							<span class="cta-btn-txt" data-hover="Email me">Email me</span>
 						</a>
-	        	<a class="txt-link" href="#">view resume</a>
+	        	<a class="txt-link" href="http://hannahbishop.com/wp-content/uploads/resume.pdf">view resume</a>
 					</div>
 				</div>
 	      <div class="contact">
