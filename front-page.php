@@ -12,7 +12,7 @@ get_header(); ?>
 	        <h1>Hannah Bishop</h1>
 	        <ul class="intro-txt">
 	          <li><p>Front end designer and developer.</p></li>
-	          <li><p>Computer science student at UVic.</p></li>
+	          <li><p>Software engineering student at UVic.</p></li>
 	          <li><p>Cat owner.</p></li>
 	        </ul>
 					<div class="cta">
