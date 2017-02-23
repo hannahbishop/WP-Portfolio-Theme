@@ -6,7 +6,7 @@
 get_header(); ?>
 
 		<main class="site-main">
-      <div class="landing-page" style="background-image: url(<?php bloginfo('template_directory');?>/assets/img/swing.jpg);">
+      <div class="landing-page" style="background: url(<?php bloginfo('template_directory');?>/assets/img/swing.jpg);">
 				<div class="hero">
 					<?php get_template_part( 'assets/svg/letterhead.svg' );?>
 	        <h1>Hannah Bishop</h1>
@@ -17,7 +17,7 @@ get_header(); ?>
 	        </ul>
 					<div class="cta">
 	        	<a class="cta-btn" href="mailto:hbishop@uvic.ca" target="_blank">
-							<span class="cta-btn-txt" data-hover="Email me">Email me</span>
+							<span class="cta-btn-txt">hbishop@uvic.ca</span>
 						</a>
 	        	<a class="txt-link" href="http://hannahbishop.com/wp-content/uploads/resume.pdf" target="_blank">view resume</a>
 					</div>
