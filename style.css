@@ -527,66 +527,75 @@ footer img {
 }
 
 /* line 1, sass/partials/_landing.scss */
-.landing-page {
+.content {
   width: 100%;
   height: 100%;
   min-height: 50rem;
-  background: gray;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  background-size: cover;
-  background-position: center center;
 }
 
-/* line 14, sass/partials/_landing.scss */
+/* line 11, sass/partials/_landing.scss */
+.bkgd {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* line 22, sass/partials/_landing.scss */
 .hero {
   margin: auto;
   padding: 2rem 0;
   text-align: center;
 }
 
-/* line 20, sass/partials/_landing.scss */
+/* line 28, sass/partials/_landing.scss */
 .hero h1 {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 720px) {
-  /* line 20, sass/partials/_landing.scss */
+  /* line 28, sass/partials/_landing.scss */
   .hero h1 {
     margin-bottom: 1rem;
     font-size: 3.5rem;
   }
 }
 
-/* line 28, sass/partials/_landing.scss */
+/* line 36, sass/partials/_landing.scss */
 .intro-txt {
   margin-bottom: 5.5rem;
 }
 @media screen and (max-width: 720px) {
-  /* line 28, sass/partials/_landing.scss */
+  /* line 36, sass/partials/_landing.scss */
   .intro-txt {
     margin-bottom: 4.5rem;
   }
 }
 
-/* line 35, sass/partials/_landing.scss */
+/* line 43, sass/partials/_landing.scss */
 .intro-txt p {
   line-height: 3.6rem;
 }
 @media screen and (max-width: 720px) {
-  /* line 35, sass/partials/_landing.scss */
+  /* line 43, sass/partials/_landing.scss */
   .intro-txt p {
     line-height: 3rem;
   }
 }
 
-/* line 42, sass/partials/_landing.scss */
+/* line 50, sass/partials/_landing.scss */
 .cta {
   display: inline-block;
 }
 
-/* line 46, sass/partials/_landing.scss */
+/* line 54, sass/partials/_landing.scss */
 .cta-btn {
   display: block;
   margin: 0 auto;
@@ -603,13 +612,13 @@ footer img {
   overflow: hidden;
 }
 @media screen and (max-width: 720px) {
-  /* line 46, sass/partials/_landing.scss */
+  /* line 54, sass/partials/_landing.scss */
   .cta-btn {
     padding: 0.75rem 2rem;
   }
 }
 
-/* line 65, sass/partials/_landing.scss */
+/* line 73, sass/partials/_landing.scss */
 .cta-btn span {
   position: relative;
   display: inline-block;
@@ -618,7 +627,7 @@ footer img {
   transition: transform 0.15s;
 }
 
-/* line 73, sass/partials/_landing.scss */
+/* line 81, sass/partials/_landing.scss */
 .cta-btn span::before {
   position: absolute;
   top: 100%;
@@ -630,20 +639,20 @@ footer img {
   padding-top: 4rem;
 }
 
-/* line 84, sass/partials/_landing.scss */
+/* line 92, sass/partials/_landing.scss */
 .cta-btn:hover span {
   -webkit-transform: translateY(-6rem);
   -moz-transform: translateY(-6rem);
   transform: translateY(-6rem);
 }
 
-/* line 90, sass/partials/_landing.scss */
-.landing-page .txt-link {
+/* line 98, sass/partials/_landing.scss */
+.content .txt-link {
   display: block;
 }
 
 /***Contact***/
-/* line 95, sass/partials/_landing.scss */
+/* line 103, sass/partials/_landing.scss */
 .contact {
   align-self: flex-end;
   -webkit-align-self: flex-end;
@@ -652,41 +661,41 @@ footer img {
   text-align: right;
 }
 
-/* line 103, sass/partials/_landing.scss */
+/* line 111, sass/partials/_landing.scss */
 .icon-list {
   text-align: right;
 }
 
-/* line 107, sass/partials/_landing.scss */
+/* line 115, sass/partials/_landing.scss */
 .contact li {
   display: inline-block;
 }
 
-/* line 111, sass/partials/_landing.scss */
+/* line 119, sass/partials/_landing.scss */
 .link-icon {
   margin: 0 0.75rem;
 }
 
-/* line 115, sass/partials/_landing.scss */
+/* line 123, sass/partials/_landing.scss */
 .letter-head {
   height: 5rem;
 }
 
 /***SVG***/
-/* line 120, sass/partials/_landing.scss */
+/* line 128, sass/partials/_landing.scss */
 .link-icon svg {
   height: 2.9rem;
   width: 2.9rem;
 }
 
-/* line 125, sass/partials/_landing.scss */
+/* line 133, sass/partials/_landing.scss */
 .link-icon svg * {
   opacity: 0.7;
   transition: all 0.1s ease-in-out;
   fill: #FFFFFF;
 }
 
-/* line 131, sass/partials/_landing.scss */
+/* line 139, sass/partials/_landing.scss */
 .link-icon:hover path {
   opacity: 1;
 }

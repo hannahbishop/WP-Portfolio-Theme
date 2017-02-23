@@ -6,7 +6,8 @@
 get_header(); ?>
 
 		<main class="site-main">
-      <div class="landing-page" style="background-image: url(<?php bloginfo('template_directory');?>/assets/img/swing.jpg);">
+			<div class="bkgd" style="background-image: url(<?php bloginfo('template_directory');?>/assets/img/swing.jpg);"></div>
+      <div class="content">
 				<div class="hero">
 					<?php get_template_part( 'assets/svg/letterhead.svg' );?>
 	        <h1>Hannah Bishop</h1>
