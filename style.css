@@ -674,15 +674,16 @@ footer img {
 /* line 120, sass/partials/_landing.scss */
 .link-icon svg {
   height: 2.9rem;
+  width: 2.9rem;
 }
 
-/* line 124, sass/partials/_landing.scss */
-.contact-icon {
-  fill: #FFFFFF;
+/* line 125, sass/partials/_landing.scss */
+.link-icon path {
+  opacity: 0.7;
   transition: all 0.1s ease-in-out;
 }
 
-/* line 129, sass/partials/_landing.scss */
-.link-icon:hover .contact-icon {
-  fill: #000000;
+/* line 130, sass/partials/_landing.scss */
+.link-icon:hover path {
+  opacity: 1;
 }
