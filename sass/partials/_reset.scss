@@ -1,6 +1,13 @@
 html {
     font-size: 0.625em;
 }
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

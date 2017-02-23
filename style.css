@@ -4,6 +4,15 @@ html {
 }
 
 /* line 4, sass/partials/_reset.scss */
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 11, sass/partials/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,35 +31,35 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 21, sass/partials/_reset.scss */
+/* line 28, sass/partials/_reset.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 25, sass/partials/_reset.scss */
+/* line 32, sass/partials/_reset.scss */
 mark {
   background-color: transparent;
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 29, sass/partials/_reset.scss */
+/* line 36, sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 33, sass/partials/_reset.scss */
+/* line 40, sass/partials/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 36, sass/partials/_reset.scss */
+/* line 43, sass/partials/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 39, sass/partials/_reset.scss */
+/* line 46, sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
