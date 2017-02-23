@@ -6,24 +6,27 @@ h1 {
     line-height: 6rem;
     text-transform: uppercase;
     font-weight: 900;
+    transition: all 0.2s ease;
+    @media screen and (max-width: $break-medium) {
+      font-size: 3.5rem;
+    }
 }
 
-p {
-  font-family: $secondary-font-stack;
-  font-size: 1.8rem;
+p,
+.txt-link {
+  font-family: $primary-font-stack;
+  font-size: 1.5rem;
   color: $primary-font-color;
   letter-spacing: 0.1rem;
   font-weight: 100;
+  transition: all 0.2s ease;
+  @media screen and (max-width: $break-medium) {
+    font-size: 1.3rem;
+  }
 }
 
 .txt-link {
-  font-family: $secondary-font-stack;
-  color: $primary-font-color;
-  line-height: 3.6rem;
-  font-weight: 100;
   font-style: italic;
-  font-size: 1.8rem;
-  letter-spacing: 0.25rem;
   transition: all 0.15s ease-in-out;
   text-decoration: underline;
   opacity: 0.7;

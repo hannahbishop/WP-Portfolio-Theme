@@ -75,32 +75,42 @@ h1 {
   line-height: 6rem;
   text-transform: uppercase;
   font-weight: 900;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 720px) {
+  /* line 1, sass/partials/_typography.scss */
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
-/* line 11, sass/partials/_typography.scss */
-p {
-  font-family: "chaparral-pro", serif;
-  font-size: 1.8rem;
+/* line 15, sass/partials/_typography.scss */
+p,
+.txt-link {
+  font-family: "filson-pro", Helvetica, sans-serif;
+  font-size: 1.5rem;
   color: #FFFFFF;
   letter-spacing: 0.1rem;
   font-weight: 100;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 720px) {
+  /* line 15, sass/partials/_typography.scss */
+  p,
+  .txt-link {
+    font-size: 1.3rem;
+  }
 }
 
-/* line 19, sass/partials/_typography.scss */
+/* line 28, sass/partials/_typography.scss */
 .txt-link {
-  font-family: "chaparral-pro", serif;
-  color: #FFFFFF;
-  line-height: 3.6rem;
-  font-weight: 100;
   font-style: italic;
-  font-size: 1.8rem;
-  letter-spacing: 0.25rem;
   transition: all 0.15s ease-in-out;
   text-decoration: underline;
   opacity: 0.7;
 }
 
-/* line 32, sass/partials/_typography.scss */
+/* line 35, sass/partials/_typography.scss */
 .txt-link:hover {
   opacity: 1;
 }
@@ -207,7 +217,6 @@ mark {
 
 /* line 1, sass/partials/_footer.scss */
 footer {
-  padding: 6rem 2.5rem 2.5rem;
   clear: both;
 }
 
@@ -544,34 +553,34 @@ footer img {
   bottom: 0;
   left: 0;
   right: 0;
+  background-image: url(/assets/img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: -1;
 }
 
-/* line 23, sass/partials/_landing.scss */
+/* line 24, sass/partials/_landing.scss */
 .hero {
   margin: auto;
   padding: 2rem 0;
   text-align: center;
 }
 
-/* line 29, sass/partials/_landing.scss */
+/* line 30, sass/partials/_landing.scss */
 .hero h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 720px) {
-  /* line 29, sass/partials/_landing.scss */
+  /* line 30, sass/partials/_landing.scss */
   .hero h1 {
-    margin-bottom: 1rem;
-    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
 /* line 37, sass/partials/_landing.scss */
 .intro-txt {
-  margin-bottom: 5.5rem;
+  margin-bottom: 6.5rem;
 }
 @media screen and (max-width: 720px) {
   /* line 37, sass/partials/_landing.scss */
@@ -598,10 +607,11 @@ footer img {
 
 /* line 55, sass/partials/_landing.scss */
 .cta-btn {
+  position: relative;
   display: block;
   margin: 0 auto;
   margin-bottom: 1.5rem;
-  padding: 1rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   color: #000000;
   font-family: "filson-pro", Helvetica, sans-serif;
   font-weight: 700;
@@ -612,24 +622,29 @@ footer img {
   border-radius: 5rem;
   overflow: hidden;
 }
-@media screen and (max-width: 720px) {
-  /* line 55, sass/partials/_landing.scss */
-  .cta-btn {
-    padding: 0.75rem 2rem;
-  }
-}
 
-/* line 74, sass/partials/_landing.scss */
-.cta-btn span {
+/* line 72, sass/partials/_landing.scss */
+.cta-btn-txt {
   position: relative;
   display: inline-block;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.15s;
+  transition: all 0.15s;
+  opacity: 1;
 }
 
-/* line 82, sass/partials/_landing.scss */
-.cta-btn span::before {
+/* line 79, sass/partials/_landing.scss */
+.cta-btn-icon {
+  width: 2.8rem;
+  position: absolute;
+  left: 50%;
+  top: 0.7rem;
+  margin-left: -1.5rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.15s cubic-bezier(0.25, 0.1, 0.54, 1.34);
+}
+
+/* line 90, sass/partials/_landing.scss */
+.cta-btn-txt::before {
   position: absolute;
   top: 100%;
   content: attr(data-hover);
@@ -640,20 +655,24 @@ footer img {
   padding-top: 4rem;
 }
 
-/* line 93, sass/partials/_landing.scss */
-.cta-btn:hover span {
-  -webkit-transform: translateY(-6rem);
-  -moz-transform: translateY(-6rem);
-  transform: translateY(-6rem);
+/* line 101, sass/partials/_landing.scss */
+.cta-btn:hover .cta-btn-txt {
+  opacity: 0;
 }
 
-/* line 99, sass/partials/_landing.scss */
+/* line 105, sass/partials/_landing.scss */
+.cta-btn:hover .cta-btn-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 110, sass/partials/_landing.scss */
 .content .txt-link {
   display: block;
 }
 
 /***Contact***/
-/* line 104, sass/partials/_landing.scss */
+/* line 115, sass/partials/_landing.scss */
 .contact {
   align-self: flex-end;
   -webkit-align-self: flex-end;
@@ -662,41 +681,48 @@ footer img {
   text-align: right;
 }
 
-/* line 112, sass/partials/_landing.scss */
+/* line 123, sass/partials/_landing.scss */
 .icon-list {
   text-align: right;
 }
 
-/* line 116, sass/partials/_landing.scss */
+/* line 127, sass/partials/_landing.scss */
 .contact li {
   display: inline-block;
 }
 
-/* line 120, sass/partials/_landing.scss */
+/* line 131, sass/partials/_landing.scss */
 .link-icon {
   margin: 0 0.75rem;
 }
 
-/* line 124, sass/partials/_landing.scss */
+/* line 135, sass/partials/_landing.scss */
 .letter-head {
-  height: 5rem;
+  height: 4rem;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 720px) {
+  /* line 135, sass/partials/_landing.scss */
+  .letter-head {
+    height: 3rem;
+  }
 }
 
 /***SVG***/
-/* line 129, sass/partials/_landing.scss */
+/* line 144, sass/partials/_landing.scss */
 .link-icon svg {
   height: 2.9rem;
   width: 2.9rem;
 }
 
-/* line 134, sass/partials/_landing.scss */
+/* line 149, sass/partials/_landing.scss */
 .link-icon svg * {
   opacity: 0.7;
   transition: all 0.1s ease-in-out;
   fill: #FFFFFF;
 }
 
-/* line 140, sass/partials/_landing.scss */
+/* line 155, sass/partials/_landing.scss */
 .link-icon:hover path {
   opacity: 1;
 }
